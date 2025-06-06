@@ -50,7 +50,7 @@ There are two options to create an API and deploy it on a Gravitee gateway. You 
 ### Postman
 Postman is a neat tool to create and deploy an API on your gateway. It can import an environment and collections of API calls from a .json file.
 
-Let's start by creating an environment in Postman. An environment allows you to specify certain variables that you can reuse in your collections, such as the address of the gateway host etc.. For this, click to the "Environments" Tab on the left of the Postman App, then click on "Import" and select the file in `postman-collections/getting-started/postman-environment.json`. Make yourself familiar with the variables you just created for this environment.
+Let's start by creating an environment in Postman. An environment allows you to specify certain variables that you can reuse in your collections, such as the address of the gateway host etc.. For this, click to the "Environments" Tab on the left of the Postman App, then click on "Import" and select the file in `postman-collections/getting-started/postman-environment.json`. Activate the "Dev Guide Environment" by clicking on the checkmark next to it. Make yourself familiar with the variables you just created for this environment.
 
 ![postman_env](./images/postman_env.png)
 
