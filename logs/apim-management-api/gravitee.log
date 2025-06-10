@@ -1,0 +1,1181 @@
+06:48:50.429 [graviteeio-node] INFO  i.g.n.c.spring.SpringBasedContainer - Starting Boot phase.
+06:48:50.497 [graviteeio-node] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - Loading boot plugin handlers
+06:48:50.500 [graviteeio-node] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - Found 1 boot plugin handler(s):
+06:48:50.500 [graviteeio-node] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - 	io.gravitee.node.secrets.plugins.internal.SecretProviderPluginHandler
+06:48:50.603 [graviteeio-node] INFO  i.g.n.c.s.e.PropertiesConfiguration - Loading Gravitee configuration.
+06:48:50.606 [graviteeio-node] INFO  i.g.n.c.s.e.PropertiesConfiguration - 	Gravitee configuration loaded from /opt/graviteeio-management-api/config/gravitee.yml
+06:48:50.639 [graviteeio-node] INFO  i.g.n.c.s.e.PropertiesConfiguration - Loading Gravitee configuration. DONE
+06:48:50.877 [graviteeio-node] ERROR i.g.k.client.config.KubernetesConfig - Unable to resolve the API Server URL
+06:48:50.877 [graviteeio-node] ERROR i.g.k.client.config.KubernetesConfig - Unable to configure Kubernetes Config. No KubeConfig or Service account is found
+06:48:50.893 [graviteeio-node] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.node.license.DefaultLicenseManager
+06:48:50.894 [graviteeio-node] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.node.license.LicenseLoaderService
+06:48:50.898 [graviteeio-node] INFO  i.g.n.license.DefaultLicenseFetcher - No license file found. Some plugins may be disabled
+06:48:50.900 [graviteeio-node] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.plugin.core.internal.BootPluginEventListener
+06:48:50.930 [graviteeio-node] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugins from /opt/graviteeio-management-api/plugins
+06:48:51.707 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available service: 
+06:48:51.708 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> subscription-expiration-notifier [4.7.6] has been loaded
+06:48:51.708 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> auto-fetch [4.7.6] has been loaded
+06:48:51.708 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> search-indexer [4.7.6] has been loaded
+06:48:51.708 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> mgmt-service-dictionary [4.7.6] has been loaded
+06:48:51.709 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> subscriptions-refresher [4.7.6] has been loaded
+06:48:51.709 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> mgmt-service-dynamicproperties [4.7.6] has been loaded
+06:48:51.709 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> mgmt-service-sync [4.7.6] has been loaded
+06:48:51.710 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> service-bridge-http-server [6.0.0] has been loaded
+06:48:51.710 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available api-service: 
+06:48:51.710 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> consul-service-discovery [4.7.6] has been loaded
+06:48:51.710 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> http-health-check [4.7.6] has been loaded
+06:48:51.712 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> http-dynamic-properties [4.7.6] has been loaded
+06:48:51.712 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available entrypoint-connector: 
+06:48:51.712 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> http-proxy [4.7.6] has been loaded
+06:48:51.712 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> tcp-proxy [4.7.6] has been loaded
+06:48:51.712 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> native-kafka [2.2.3] has been loaded
+06:48:51.712 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> webhook [4.0.2] has been loaded
+06:48:51.713 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> http-get [2.1.0] has been loaded
+06:48:51.713 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> http-post [2.1.0] has been loaded
+06:48:51.713 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> websocket [2.0.0] has been loaded
+06:48:51.713 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> sse [5.0.0] has been loaded
+06:48:51.713 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available identity_provider: 
+06:48:51.714 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> gravitee-idp [4.7.6] has been loaded
+06:48:51.714 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> ldap-idp [4.7.6] has been loaded
+06:48:51.714 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> inmemory-idp [4.7.6] has been loaded
+06:48:51.714 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available endpoint-connector: 
+06:48:51.714 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> http-proxy [4.7.6] has been loaded
+06:48:51.714 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> tcp-proxy [4.7.6] has been loaded
+06:48:51.714 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> mock [4.7.6] has been loaded
+06:48:51.714 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> native-kafka [2.2.3] has been loaded
+06:48:51.715 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> rabbitmq [3.0.1] has been loaded
+06:48:51.715 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> mqtt5 [4.0.1] has been loaded
+06:48:51.715 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> kafka [4.0.2] has been loaded
+06:48:51.715 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> asb [1.0.1] has been loaded
+06:48:51.715 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available repository: 
+06:48:51.715 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> repository-mongodb [4.7.6] has been loaded
+06:48:51.715 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> repository-jdbc [4.7.6] has been loaded
+06:48:51.716 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> repository-elasticsearch [4.7.6] has been loaded
+06:48:51.716 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> repository-noop [4.7.6] has been loaded
+06:48:51.716 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available connector: 
+06:48:51.716 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> connector-http [5.0.5] has been loaded
+06:48:51.716 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available policy: 
+06:48:51.716 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> xslt [3.1.1] has been loaded
+06:48:51.716 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> policy-http-callout [4.0.2] has been loaded
+06:48:51.716 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> api-key [5.1.0] has been loaded
+06:48:51.716 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> kafka-acl [1.7.4] has been loaded
+06:48:51.716 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> retry [3.0.0] has been loaded
+06:48:51.716 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> transform-headers [4.0.0] has been loaded
+06:48:51.716 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> ip-filtering [1.19.0] has been loaded
+06:48:51.717 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> jwt [6.1.2] has been loaded
+06:48:51.717 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> json-validation [2.0.3] has been loaded
+06:48:51.721 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> mock [1.14.1] has been loaded
+06:48:51.721 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> regex-threat-protection [1.6.0] has been loaded
+06:48:51.721 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> kafka-topic-mapping [1.2.0] has been loaded
+06:48:51.722 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> jws [2.0.0] has been loaded
+06:48:51.722 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> traffic-shadowing [3.0.0] has been loaded
+06:48:51.722 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> kafka-quota [1.0.2] has been loaded
+06:48:51.722 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> groovy [3.0.1] has been loaded
+06:48:51.722 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> status-code [1.0.2] has been loaded
+06:48:51.722 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> oauth2 [4.0.0] has been loaded
+06:48:51.722 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> key-less [4.0.0] has been loaded
+06:48:51.722 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> cache [2.0.7] has been loaded
+06:48:51.722 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> data-cache [1.0.5] has been loaded
+06:48:51.722 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> spike-arrest [2.1.3] has been loaded
+06:48:51.722 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> quota [2.1.3] has been loaded
+06:48:51.723 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> rate-limit [2.1.3] has been loaded
+06:48:51.723 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> policy-generate-jwt [1.8.0] has been loaded
+06:48:51.723 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> policy-data-logging-masking [3.1.1] has been loaded
+06:48:51.723 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> policy-assign-attributes [2.0.3] has been loaded
+06:48:51.723 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> mtls [1.0.0] has been loaded
+06:48:51.723 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> message-filtering [1.1.4] has been loaded
+06:48:51.723 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> oas-validation [1.0.0] has been loaded
+06:48:51.724 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> cloud-events [1.1.0] has been loaded
+06:48:51.724 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> policy-override-request-method [2.2.1] has been loaded
+06:48:51.724 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> ssl-enforcement [1.5.0] has been loaded
+06:48:51.724 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> xml-threat-protection [1.5.1] has been loaded
+06:48:51.724 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> policy-request-validation [1.15.1] has been loaded
+06:48:51.724 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> html-json [1.6.3] has been loaded
+06:48:51.724 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> rbac [1.4.0] has been loaded
+06:48:51.724 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> xml-validation [1.2.0] has been loaded
+06:48:51.724 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> json-threat-protection [1.4.0] has been loaded
+06:48:51.724 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> url-rewriting [1.7.0] has been loaded
+06:48:51.725 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> policy-openid-userinfo [1.7.0] has been loaded
+06:48:51.725 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> transform-queryparams [1.9.0] has been loaded
+06:48:51.725 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> resource-filtering [1.10.0] has been loaded
+06:48:51.725 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> http-signature [1.7.0] has been loaded
+06:48:51.725 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> generate-http-signature [1.3.0] has been loaded
+06:48:51.725 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> dynamic-routing [1.13.0] has been loaded
+06:48:51.725 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> json-xml [3.0.3] has been loaded
+06:48:51.725 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> policy-assign-metrics [3.1.0] has been loaded
+06:48:51.725 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> rest-to-soap [1.14.1] has been loaded
+06:48:51.725 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> request-content-limit [1.8.1] has been loaded
+06:48:51.725 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> json-to-json [3.0.1] has been loaded
+06:48:51.725 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> metrics-reporter [2.0.1] has been loaded
+06:48:51.726 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> latency [2.0.1] has been loaded
+06:48:51.726 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> xml-json [2.0.1] has been loaded
+06:48:51.726 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> policy-assign-content [2.0.1] has been loaded
+06:48:51.726 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available cluster: 
+06:48:51.726 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> cluster-standalone [7.5.0] has been loaded
+06:48:51.726 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available cache: 
+06:48:51.726 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> cache-standalone [7.5.0] has been loaded
+06:48:51.726 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available secret-provider: 
+06:48:51.726 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> vault [2.1.0] has been loaded
+06:48:51.726 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> kubernetes [2.0.0] has been loaded
+06:48:51.726 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available resource: 
+06:48:51.727 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> oauth2 [4.0.2] has been loaded
+06:48:51.727 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> cache [3.0.0] has been loaded
+06:48:51.727 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> oauth2-am-resource [3.0.0] has been loaded
+06:48:51.727 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> content-provider-inline-resource [1.1.1] has been loaded
+06:48:51.727 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available cockpit: 
+06:48:51.727 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> cockpit-connectors-ws [5.1.4] has been loaded
+06:48:51.727 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available fetcher: 
+06:48:51.728 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> github-fetcher [2.2.1] has been loaded
+06:48:51.728 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> gitlab-fetcher [2.1.1] has been loaded
+06:48:51.728 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> http-fetcher [2.1.1] has been loaded
+06:48:51.728 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> bitbucket-fetcher [2.1.1] has been loaded
+06:48:51.729 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> git-fetcher [2.1.1] has been loaded
+06:48:51.730 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available notifier: 
+06:48:51.730 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> webhook-notifier [1.1.3] has been loaded
+06:48:51.730 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> email-notifier [1.5.1] has been loaded
+06:48:51.730 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> slack-notifier [1.3.0] has been loaded
+06:48:51.731 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available alert: 
+06:48:51.731 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> alert-engine-connector-ws [2.1.0] has been loaded
+06:48:51.731 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available service_discovery: 
+06:48:51.731 [gio.core-plugin-0] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> consul-service-discovery [1.3.0] has been loaded
+06:48:51.735 [graviteeio-node] INFO  i.g.p.c.i.BootPluginEventListener - All boot plugins have been loaded. Installing...
+06:48:51.739 [graviteeio-node] INFO  i.g.n.s.p.i.SecretProviderPluginHandler - Install plugin: vault [com.graviteesource.secretprovider.hcvault.HCVaultSecretProviderFactory]
+06:48:51.808 [graviteeio-node] WARN  i.g.n.s.p.i.SecretProviderPluginHandler - Plugin 'vault' detected but not activated.
+06:48:51.808 [graviteeio-node] INFO  i.g.n.s.p.i.SecretProviderPluginHandler - Install plugin: kubernetes [io.gravitee.secretprovider.kubernetes.KubernetesSecretProviderFactory]
+06:48:51.815 [graviteeio-node] INFO  i.g.n.s.p.i.SecretProviderPluginHandler - Plugin 'kubernetes' installed.
+06:48:51.815 [graviteeio-node] INFO  i.g.n.c.spring.SpringBasedContainer - Boot phase done. Initializing context.
+06:48:51.827 [graviteeio-node] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - Loading plugin handlers
+06:48:51.850 [graviteeio-node] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - Found 18 plugin handler(s):
+06:48:51.850 [graviteeio-node] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - 	io.gravitee.rest.api.service.impl.swagger.policy.PolicyPluginHandler
+06:48:51.851 [graviteeio-node] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - 	io.gravitee.plugin.entrypoint.internal.EntrypointConnectorPluginHandler
+06:48:51.851 [graviteeio-node] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - 	io.gravitee.plugin.repository.internal.RepositoryPluginHandler
+06:48:51.852 [graviteeio-node] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - 	io.gravitee.plugin.connector.internal.ConnectorPluginHandler
+06:48:51.852 [graviteeio-node] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - 	io.gravitee.plugin.fetcher.internal.FetcherPluginHandler
+06:48:51.853 [graviteeio-node] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - 	io.gravitee.node.cluster.plugin.ClusterPluginHandler
+06:48:51.853 [graviteeio-node] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - 	io.gravitee.plugin.endpoint.internal.EndpointConnectorPluginHandler
+06:48:51.853 [graviteeio-node] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - 	io.gravitee.rest.api.idp.core.plugin.IdentityProviderPluginHandler
+06:48:51.853 [graviteeio-node] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - 	io.gravitee.node.reporter.plugin.ReporterPluginHandler
+06:48:51.854 [graviteeio-node] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - 	io.gravitee.plugin.alert.internal.AlertPluginHandler
+06:48:51.854 [graviteeio-node] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - 	io.gravitee.plugin.resource.internal.ResourcePluginHandler
+06:48:51.854 [graviteeio-node] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - 	io.gravitee.plugin.notifier.internal.NotifierPluginHandler
+06:48:51.854 [graviteeio-node] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - 	io.gravitee.plugin.policy.internal.PolicyPluginHandler
+06:48:51.854 [graviteeio-node] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - 	io.gravitee.plugin.cockpit.CockpitPluginHandler
+06:48:51.855 [graviteeio-node] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - 	io.gravitee.node.cache.plugin.CachePluginHandler
+06:48:51.855 [graviteeio-node] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - 	io.gravitee.node.plugins.service.handler.ServicePluginHandler
+06:48:51.855 [graviteeio-node] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - 	io.gravitee.plugin.apiservice.internal.ApiServicePluginHandler
+06:48:51.855 [graviteeio-node] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - 	io.gravitee.plugin.discovery.internal.ServiceDiscoveryPluginHandler
+06:48:52.892 [graviteeio-node] WARN  o.a.l.i.v.VectorizationProvider - Java vector incubator module is not readable. For optimal vector performance, pass '--add-modules jdk.incubator.vector' to enable Vector API.
+06:48:53.570 [graviteeio-node] WARN  i.gravitee.common.util.DataEncryptor - 
+06:48:53.571 [graviteeio-node] WARN  i.gravitee.common.util.DataEncryptor - ##############################################################
+06:48:53.572 [graviteeio-node] WARN  i.gravitee.common.util.DataEncryptor - #                      SECURITY WARNING                      #
+06:48:53.572 [graviteeio-node] WARN  i.gravitee.common.util.DataEncryptor - ##############################################################
+06:48:53.572 [graviteeio-node] WARN  i.gravitee.common.util.DataEncryptor - 
+06:48:53.572 [graviteeio-node] WARN  i.gravitee.common.util.DataEncryptor - You still use the default secret.
+06:48:53.572 [graviteeio-node] WARN  i.gravitee.common.util.DataEncryptor - This known secret can be used to access protected information.
+06:48:53.572 [graviteeio-node] WARN  i.gravitee.common.util.DataEncryptor - Please customize the 'api.properties.encryption.secret' parameter value, or ask your administrator to do it.
+06:48:53.573 [graviteeio-node] WARN  i.gravitee.common.util.DataEncryptor - 
+06:48:53.573 [graviteeio-node] WARN  i.gravitee.common.util.DataEncryptor - ##############################################################
+06:48:53.573 [graviteeio-node] WARN  i.gravitee.common.util.DataEncryptor - 
+06:48:54.614 [graviteeio-node] INFO  i.g.r.a.s.a.i.AuthenticationProviderManagerImpl - Loading authentication providers
+06:48:54.652 [graviteeio-node] INFO  i.g.n.c.spring.SpringBasedContainer - Context initialized.
+06:48:54.654 [graviteeio-node] INFO  i.g.node.container.AbstractContainer - Starting Gravitee.io - Rest APIs...
+06:48:54.656 [graviteeio-node] INFO  i.g.node.container.AbstractNode - Gravitee.io - Rest APIs is now starting...
+06:48:54.663 [graviteeio-node] INFO  i.g.node.container.AbstractNode - 	Starting component: SpanExporterFactory
+06:48:54.663 [graviteeio-node] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.node.opentelemetry.exporter.SpanExporterFactory
+06:48:54.663 [graviteeio-node] INFO  i.g.node.container.AbstractNode - 	Starting component: PluginEventListener
+06:48:54.663 [graviteeio-node] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.plugin.core.internal.PluginEventListener
+06:48:54.664 [graviteeio-node] INFO  i.g.node.container.AbstractNode - 	Starting component: PluginRegistry
+06:48:54.664 [graviteeio-node] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.plugin.core.internal.PluginRegistryImpl
+06:48:54.668 [graviteeio-node] INFO  i.g.p.c.internal.PluginEventListener - All plugins have been loaded. Installing...
+06:48:54.675 [graviteeio-node] INFO  i.g.n.c.plugin.ClusterPluginHandler - Install plugin: cluster-standalone [io.gravitee.node.plugin.cluster.standalone.StandaloneClusterManager]
+06:48:54.683 [graviteeio-node] INFO  i.g.n.c.plugin.ClusterPluginHandler - Cluster manager plugin 'cluster-standalone' installed.
+06:48:54.684 [graviteeio-node] INFO  i.g.n.c.plugin.ClusterPluginHandler - Plugin 'cluster-standalone' installed.
+06:48:54.685 [graviteeio-node] INFO  i.g.n.c.plugin.CachePluginHandler - Install plugin: cache-standalone [io.gravitee.node.plugin.cache.standalone.StandaloneCacheManager]
+06:48:54.689 [graviteeio-node] INFO  i.g.n.c.plugin.CachePluginHandler - Cache manager plugin 'cache-standalone' installed.
+06:48:54.689 [graviteeio-node] INFO  i.g.n.c.plugin.CachePluginHandler - Plugin 'cache-standalone' installed.
+06:48:54.690 [graviteeio-node] INFO  i.g.p.r.i.RepositoryPluginHandler - Install plugin: repository-mongodb [io.gravitee.repository.mongodb.MongoRepositoryProvider]
+06:48:54.692 [graviteeio-node] WARN  i.g.p.r.i.RepositoryTypeReader - The repository of scope MANAGEMENT is loaded from discouraged section 'management.type'. Please use 'repositories.management.type'.
+06:48:54.692 [graviteeio-node] INFO  i.g.p.r.i.RepositoryPluginHandler - Loading repository for scope MANAGEMENT: mongodb
+06:48:54.693 [graviteeio-node] WARN  i.g.p.r.i.RepositoryTypeReader - The repository of scope ANALYTICS is loaded from discouraged section 'analytics.type'. Please use 'repositories.analytics.type'.
+06:48:54.693 [graviteeio-node] INFO  i.g.p.r.i.RepositoryPluginHandler - Loading repository for scope ANALYTICS: elasticsearch
+06:48:54.693 [graviteeio-node] INFO  i.g.p.r.i.RepositoryPluginHandler - Register a new repository: repository-mongodb [io.gravitee.repository.mongodb.MongoRepositoryProvider]
+06:48:54.694 [graviteeio-node] WARN  i.g.p.r.i.RepositoryTypeReader - The repository of scope MANAGEMENT is loaded from discouraged section 'management.type'. Please use 'repositories.management.type'.
+06:48:54.694 [graviteeio-node] INFO  i.g.p.r.i.RepositoryPluginHandler - Repository [MANAGEMENT] loaded by mongodb
+06:48:55.650 [graviteeio-node] INFO  i.g.p.r.i.RepositoryPluginHandler - Plugin 'repository-mongodb' installed.
+06:48:55.650 [graviteeio-node] INFO  i.g.p.r.i.RepositoryPluginHandler - Install plugin: repository-elasticsearch [io.gravitee.repository.elasticsearch.ElasticsearchRepositoryProvider]
+06:48:55.651 [graviteeio-node] INFO  i.g.p.r.i.RepositoryPluginHandler - Register a new repository: repository-elasticsearch [io.gravitee.repository.elasticsearch.ElasticsearchRepositoryProvider]
+06:48:55.652 [graviteeio-node] WARN  i.g.p.r.i.RepositoryTypeReader - The repository of scope ANALYTICS is loaded from discouraged section 'analytics.type'. Please use 'repositories.analytics.type'.
+06:48:55.652 [graviteeio-node] INFO  i.g.p.r.i.RepositoryPluginHandler - Repository [ANALYTICS] loaded by elasticsearch
+06:48:55.968 [graviteeio-node] INFO  i.g.p.r.i.RepositoryPluginHandler - Plugin 'repository-elasticsearch' installed.
+06:48:55.969 [graviteeio-node] INFO  i.g.p.r.i.RepositoryPluginHandler - Install plugin: repository-jdbc [io.gravitee.repository.jdbc.JdbcRepositoryProvider]
+06:48:55.970 [graviteeio-node] INFO  i.g.p.r.i.RepositoryPluginHandler - Register a new repository: repository-jdbc [io.gravitee.repository.jdbc.JdbcRepositoryProvider]
+06:48:55.971 [graviteeio-node] WARN  i.g.p.r.i.RepositoryTypeReader - The repository of scope MANAGEMENT is loaded from discouraged section 'management.type'. Please use 'repositories.management.type'.
+06:48:55.971 [graviteeio-node] INFO  i.g.p.r.i.RepositoryPluginHandler - Plugin 'repository-jdbc' installed.
+06:48:55.972 [graviteeio-node] INFO  i.g.p.r.i.RepositoryPluginHandler - Install plugin: repository-noop [io.gravitee.repository.noop.NoOpRepositoryProvider]
+06:48:55.973 [graviteeio-node] INFO  i.g.p.r.i.RepositoryPluginHandler - Register a new repository: repository-noop [io.gravitee.repository.noop.NoOpRepositoryProvider]
+06:48:55.973 [graviteeio-node] WARN  i.g.p.r.i.RepositoryTypeReader - The repository of scope ANALYTICS is loaded from discouraged section 'analytics.type'. Please use 'repositories.analytics.type'.
+06:48:55.973 [graviteeio-node] WARN  i.g.p.r.i.RepositoryTypeReader - The repository of scope MANAGEMENT is loaded from discouraged section 'management.type'. Please use 'repositories.management.type'.
+06:48:55.974 [graviteeio-node] INFO  i.g.p.r.i.RepositoryPluginHandler - Plugin 'repository-noop' installed.
+06:48:55.974 [graviteeio-node] INFO  i.g.p.a.internal.AlertPluginHandler - Install plugin: alert-engine-connector-ws [io.gravitee.ae.connector.ws.WsConnectorPlugin]
+06:48:56.000 [graviteeio-node] INFO  i.g.p.a.internal.AlertPluginHandler - Plugin 'alert-engine-connector-ws' installed.
+06:48:56.000 [graviteeio-node] INFO  i.g.p.cockpit.CockpitPluginHandler - Install plugin: cockpit-connectors-ws [io.gravitee.cockpit.connectors.ws.WebSocketCockpitConnector]
+06:48:56.028 [graviteeio-node] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.cockpit.connectors.ws.WebSocketCockpitConnector
+06:48:56.028 [graviteeio-node] INFO  i.g.c.c.ws.WebSocketCockpitConnector - Cockpit connector is disabled.
+06:48:56.028 [graviteeio-node] INFO  i.g.p.cockpit.CockpitPluginHandler - Plugin 'cockpit-connectors-ws' installed.
+06:48:56.028 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: kafka-acl [com.graviteesource.policy.kafka.acl.KafkaAclPolicy]
+06:48:56.046 [graviteeio-node] WARN  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'kafka-acl' detected but not activated.
+06:48:56.046 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: kafka-acl [com.graviteesource.policy.kafka.acl.KafkaAclPolicy]
+06:48:56.052 [graviteeio-node] WARN  i.g.p.p.internal.PolicyPluginHandler - Plugin 'kafka-acl' detected but not activated.
+06:48:56.052 [graviteeio-node] INFO  i.g.n.p.s.h.ServicePluginHandler - Install plugin: search-indexer [io.gravitee.rest.api.services.search.ScheduledSearchIndexerService]
+06:48:56.060 [graviteeio-node] INFO  i.g.n.p.s.h.ServicePluginHandler - Plugin 'search-indexer' installed.
+06:48:56.060 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: policy-openid-userinfo [io.gravitee.policy.openid.userinfo.UserInfoPolicy]
+06:48:56.062 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'policy-openid-userinfo' installed.
+06:48:56.063 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: policy-openid-userinfo [io.gravitee.policy.openid.userinfo.UserInfoPolicy]
+06:48:56.064 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'policy-openid-userinfo' installed.
+06:48:56.065 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: groovy [io.gravitee.policy.groovy.GroovyPolicy]
+06:48:56.071 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'groovy' installed.
+06:48:56.071 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: groovy [io.gravitee.policy.groovy.GroovyPolicy]
+06:48:56.075 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'groovy' installed.
+06:48:56.076 [graviteeio-node] INFO  i.g.p.e.i.EntrypointConnectorPluginHandler - Install plugin: tcp-proxy [io.gravitee.plugin.entrypoint.tcp.proxy.TcpProxyEntrypointConnectorFactory]
+06:48:56.085 [graviteeio-node] INFO  i.g.p.e.i.EntrypointConnectorPluginHandler - Plugin 'tcp-proxy' installed.
+06:48:56.086 [graviteeio-node] INFO  i.g.p.e.i.EntrypointConnectorPluginHandler - Install plugin: sse [com.graviteesource.entrypoint.sse.SseEntrypointConnectorFactory]
+06:48:56.090 [graviteeio-node] WARN  i.g.p.e.i.EntrypointConnectorPluginHandler - Plugin 'sse' detected but not activated.
+06:48:56.090 [graviteeio-node] INFO  i.g.p.e.i.EntrypointConnectorPluginHandler - Install plugin: http-proxy [io.gravitee.plugin.entrypoint.http.proxy.HttpProxyEntrypointConnectorFactory]
+06:48:56.094 [graviteeio-node] INFO  i.g.p.e.i.EntrypointConnectorPluginHandler - Plugin 'http-proxy' installed.
+06:48:56.094 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: cache [io.gravitee.policy.cache.CachePolicy]
+06:48:56.098 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'cache' installed.
+06:48:56.098 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: cache [io.gravitee.policy.cache.CachePolicy]
+06:48:56.101 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'cache' installed.
+06:48:56.101 [graviteeio-node] INFO  i.g.p.n.i.NotifierPluginHandler - Install plugin: slack-notifier [io.gravitee.notifier.slack.SlackNotifier]
+06:48:56.103 [graviteeio-node] INFO  i.g.p.n.i.NotifierPluginHandler - Plugin 'slack-notifier' installed.
+06:48:56.103 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: rest-to-soap [io.gravitee.policy.rest2soap.RestToSoapTransformerPolicy]
+06:48:56.107 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Add a Swagger visitor for policy: idrest-to-soap
+06:48:56.107 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'rest-to-soap' installed.
+06:48:56.108 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: rest-to-soap [io.gravitee.policy.rest2soap.RestToSoapTransformerPolicy]
+06:48:56.109 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'rest-to-soap' installed.
+06:48:56.110 [graviteeio-node] INFO  i.g.p.r.i.ResourcePluginHandler - Install plugin: oauth2-am-resource [io.gravitee.resource.oauth2.am.OAuth2AMResource]
+06:48:56.113 [graviteeio-node] INFO  i.g.p.r.i.ResourcePluginHandler - Plugin 'oauth2-am-resource' installed.
+06:48:56.114 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: mtls [io.gravitee.policy.mtls.MtlsPolicy]
+06:48:56.116 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'mtls' installed.
+06:48:56.117 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: mtls [io.gravitee.policy.mtls.MtlsPolicy]
+06:48:56.117 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'mtls' installed.
+06:48:56.118 [graviteeio-node] INFO  i.g.p.n.i.NotifierPluginHandler - Install plugin: webhook-notifier [io.gravitee.notifier.webhook.WebhookNotifier]
+06:48:56.119 [graviteeio-node] INFO  i.g.p.n.i.NotifierPluginHandler - Plugin 'webhook-notifier' installed.
+06:48:56.119 [graviteeio-node] INFO  i.g.p.f.i.FetcherPluginHandler - Install plugin: git-fetcher [io.gravitee.fetcher.git.GitFetcher]
+06:48:56.121 [graviteeio-node] INFO  i.g.p.f.i.FetcherPluginHandler - Plugin 'git-fetcher' installed.
+06:48:56.124 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: regex-threat-protection [io.gravitee.policy.threatprotection.regex.RegexThreatProtectionPolicy]
+06:48:56.126 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'regex-threat-protection' installed.
+06:48:56.126 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: regex-threat-protection [io.gravitee.policy.threatprotection.regex.RegexThreatProtectionPolicy]
+06:48:56.126 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'regex-threat-protection' installed.
+06:48:56.127 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: xml-threat-protection [io.gravitee.policy.threatprotection.xml.XmlThreatProtectionPolicy]
+06:48:56.128 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'xml-threat-protection' installed.
+06:48:56.129 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: xml-threat-protection [io.gravitee.policy.threatprotection.xml.XmlThreatProtectionPolicy]
+06:48:56.130 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'xml-threat-protection' installed.
+06:48:56.130 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: retry [io.gravitee.policy.retry.RetryPolicy]
+06:48:56.133 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'retry' installed.
+06:48:56.133 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: retry [io.gravitee.policy.retry.RetryPolicy]
+06:48:56.134 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'retry' installed.
+06:48:56.135 [graviteeio-node] INFO  i.g.p.e.i.EndpointConnectorPluginHandler - Install plugin: mock [io.gravitee.plugin.endpoint.mock.MockEndpointConnectorFactory]
+06:48:56.137 [graviteeio-node] INFO  i.g.p.e.i.EndpointConnectorPluginHandler - Plugin 'mock' installed.
+06:48:56.138 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: status-code [io.gravitee.policy.status.code.StatusCodePolicy]
+06:48:56.140 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'status-code' installed.
+06:48:56.141 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: status-code [io.gravitee.policy.status.code.StatusCodePolicy]
+06:48:56.142 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'status-code' installed.
+06:48:56.142 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: kafka-quota [com.graviteesource.policy.kafka.quota.KafkaQuotaPolicy]
+06:48:56.145 [graviteeio-node] WARN  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'kafka-quota' detected but not activated.
+06:48:56.146 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: kafka-quota [com.graviteesource.policy.kafka.quota.KafkaQuotaPolicy]
+06:48:56.147 [graviteeio-node] WARN  i.g.p.p.internal.PolicyPluginHandler - Plugin 'kafka-quota' detected but not activated.
+06:48:56.147 [graviteeio-node] INFO  i.g.r.a.i.c.p.IdentityProviderPluginHandler - Register a new identity provider plugin: inmemory-idp [io.gravitee.rest.api.idp.memory.InMemoryIdentityProvider]
+06:48:56.148 [graviteeio-node] INFO  i.g.n.p.s.h.ServicePluginHandler - Install plugin: service-bridge-http-server [com.graviteesource.repository.bridge.server.BridgeService]
+06:48:56.149 [graviteeio-node] WARN  i.g.n.p.s.h.ServicePluginHandler - Plugin 'service-bridge-http-server' detected but not activated.
+06:48:56.149 [graviteeio-node] INFO  i.g.p.e.i.EndpointConnectorPluginHandler - Install plugin: native-kafka [com.graviteesource.connector.nativekafka.endpoint.NativeKafkaEndpointConnectorFactory]
+06:48:56.151 [graviteeio-node] WARN  i.g.p.e.i.EndpointConnectorPluginHandler - Plugin 'native-kafka' detected but not activated.
+06:48:56.152 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: policy-override-request-method [io.gravitee.policy.overriderequestmethod.OverrideRequestMethodPolicy]
+06:48:56.153 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'policy-override-request-method' installed.
+06:48:56.153 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: policy-override-request-method [io.gravitee.policy.overriderequestmethod.OverrideRequestMethodPolicy]
+06:48:56.154 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'policy-override-request-method' installed.
+06:48:56.155 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: mock [io.gravitee.policy.mock.MockPolicy]
+06:48:56.163 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Add a Swagger visitor for policy: idmock
+06:48:56.163 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'mock' installed.
+06:48:56.164 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: mock [io.gravitee.policy.mock.MockPolicy]
+06:48:56.168 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'mock' installed.
+06:48:56.168 [graviteeio-node] INFO  i.g.p.e.i.EndpointConnectorPluginHandler - Install plugin: kafka [com.graviteesource.endpoint.kafka.KafkaEndpointConnectorFactory]
+06:48:56.172 [graviteeio-node] WARN  i.g.p.e.i.EndpointConnectorPluginHandler - Plugin 'kafka' detected but not activated.
+06:48:56.174 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: xml-json [io.gravitee.policy.xml2json.XmlToJsonTransformationPolicy]
+06:48:56.180 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Add a Swagger visitor for policy: idxml-json
+06:48:56.181 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'xml-json' installed.
+06:48:56.181 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: xml-json [io.gravitee.policy.xml2json.XmlToJsonTransformationPolicy]
+06:48:56.184 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'xml-json' installed.
+06:48:56.185 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: json-to-json [io.gravitee.policy.json2json.JsonToJsonTransformationPolicy]
+06:48:56.187 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'json-to-json' installed.
+06:48:56.187 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: json-to-json [io.gravitee.policy.json2json.JsonToJsonTransformationPolicy]
+06:48:56.188 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'json-to-json' installed.
+06:48:56.188 [graviteeio-node] INFO  i.g.n.p.s.h.ServicePluginHandler - Install plugin: subscription-expiration-notifier [io.gravitee.rest.api.services.subscriptionpreexpirationnotif.ScheduledSubscriptionPreExpirationNotificationService]
+06:48:56.197 [graviteeio-node] INFO  i.g.n.p.s.h.ServicePluginHandler - Plugin 'subscription-expiration-notifier' installed.
+06:48:56.198 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: ssl-enforcement [io.gravitee.policy.sslenforcement.SslEnforcementPolicy]
+06:48:56.201 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'ssl-enforcement' installed.
+06:48:56.201 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: ssl-enforcement [io.gravitee.policy.sslenforcement.SslEnforcementPolicy]
+06:48:56.202 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'ssl-enforcement' installed.
+06:48:56.202 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: policy-assign-content [io.gravitee.policy.assigncontent.AssignContentPolicy]
+06:48:56.205 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'policy-assign-content' installed.
+06:48:56.205 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: policy-assign-content [io.gravitee.policy.assigncontent.AssignContentPolicy]
+06:48:56.206 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'policy-assign-content' installed.
+06:48:56.206 [graviteeio-node] INFO  i.g.p.e.i.EndpointConnectorPluginHandler - Install plugin: asb [io.gravitee.endpoint.azure.servicebus.AzureServiceBusEndpointConnectorFactory]
+06:48:56.212 [graviteeio-node] WARN  i.g.p.e.i.EndpointConnectorPluginHandler - Plugin 'asb' detected but not activated.
+06:48:56.212 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: key-less [io.gravitee.policy.keyless.KeylessPolicy]
+06:48:56.216 [graviteeio-node] INFO  i.g.p.p.i.PolicyConfigurationClassFinder - No policy configuration class defined for policy io.gravitee.policy.keyless.KeylessPolicy
+06:48:56.217 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'key-less' installed.
+06:48:56.217 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: key-less [io.gravitee.policy.keyless.KeylessPolicy]
+06:48:56.217 [graviteeio-node] INFO  i.g.p.p.i.PolicyConfigurationClassFinder - No policy configuration class defined for policy io.gravitee.policy.keyless.KeylessPolicy
+06:48:56.218 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'key-less' installed.
+06:48:56.218 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: policy-assign-attributes [io.gravitee.policy.assignattributes.AssignAttributesPolicy]
+06:48:56.220 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'policy-assign-attributes' installed.
+06:48:56.220 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: policy-assign-attributes [io.gravitee.policy.assignattributes.AssignAttributesPolicy]
+06:48:56.221 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'policy-assign-attributes' installed.
+06:48:56.221 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: quota [io.gravitee.policy.quota.QuotaPolicy]
+06:48:56.225 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'quota' installed.
+06:48:56.225 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: quota [io.gravitee.policy.quota.QuotaPolicy]
+06:48:56.226 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'quota' installed.
+06:48:56.226 [graviteeio-node] INFO  i.g.n.p.s.h.ServicePluginHandler - Install plugin: mgmt-service-dynamicproperties [io.gravitee.rest.api.services.dynamicproperties.DynamicPropertiesService]
+06:48:56.230 [graviteeio-node] INFO  i.g.n.p.s.h.ServicePluginHandler - Plugin 'mgmt-service-dynamicproperties' installed.
+06:48:56.230 [graviteeio-node] INFO  i.g.p.r.i.ResourcePluginHandler - Install plugin: oauth2 [io.gravitee.resource.oauth2.generic.OAuth2GenericResource]
+06:48:56.232 [graviteeio-node] INFO  i.g.p.r.i.ResourcePluginHandler - Plugin 'oauth2' installed.
+06:48:56.232 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: metrics-reporter [io.gravitee.policy.metricsreporter.MetricsReporterPolicy]
+06:48:56.236 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'metrics-reporter' installed.
+06:48:56.236 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: metrics-reporter [io.gravitee.policy.metricsreporter.MetricsReporterPolicy]
+06:48:56.237 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'metrics-reporter' installed.
+06:48:56.237 [graviteeio-node] INFO  i.g.p.e.i.EntrypointConnectorPluginHandler - Install plugin: websocket [com.graviteesource.entrypoint.websocket.WebSocketEntrypointConnectorFactory]
+06:48:56.239 [graviteeio-node] WARN  i.g.p.e.i.EntrypointConnectorPluginHandler - Plugin 'websocket' detected but not activated.
+06:48:56.239 [graviteeio-node] INFO  i.g.n.p.s.h.ServicePluginHandler - Install plugin: mgmt-service-sync [io.gravitee.rest.api.services.sync.ScheduledSyncService]
+06:48:56.248 [graviteeio-node] INFO  i.g.n.p.s.h.ServicePluginHandler - Plugin 'mgmt-service-sync' installed.
+06:48:56.248 [graviteeio-node] INFO  i.g.p.a.i.ApiServicePluginHandler - Install plugin: http-dynamic-properties [io.gravitee.apim.plugin.apiservice.dynamicproperties.http.HttpDynamicPropertiesServiceFactory]
+06:48:56.249 [graviteeio-node] INFO  i.g.p.a.i.ApiServiceConfigurationClassFinder - No configuration class defined for api service io.gravitee.apim.plugin.apiservice.dynamicproperties.http.HttpDynamicPropertiesServiceFactory
+06:48:56.250 [graviteeio-node] INFO  i.g.p.a.i.ApiServicePluginHandler - Plugin 'http-dynamic-properties' installed.
+06:48:56.250 [graviteeio-node] INFO  i.g.p.n.i.NotifierPluginHandler - Install plugin: email-notifier [io.gravitee.notifier.email.EmailNotifier]
+06:48:56.251 [graviteeio-node] INFO  i.g.p.n.i.NotifierPluginHandler - Plugin 'email-notifier' installed.
+06:48:56.251 [graviteeio-node] INFO  i.g.n.p.s.h.ServicePluginHandler - Install plugin: auto-fetch [io.gravitee.rest.api.services.fetcher.ScheduledAutoFetchService]
+06:48:56.257 [graviteeio-node] INFO  i.g.n.p.s.h.ServicePluginHandler - Plugin 'auto-fetch' installed.
+06:48:56.257 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: request-content-limit [io.gravitee.policy.rcl.RequestContentLimitPolicy]
+06:48:56.259 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'request-content-limit' installed.
+06:48:56.259 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: request-content-limit [io.gravitee.policy.rcl.RequestContentLimitPolicy]
+06:48:56.260 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'request-content-limit' installed.
+06:48:56.260 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: oauth2 [io.gravitee.policy.oauth2.Oauth2Policy]
+06:48:56.263 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'oauth2' installed.
+06:48:56.264 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: oauth2 [io.gravitee.policy.oauth2.Oauth2Policy]
+06:48:56.265 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'oauth2' installed.
+06:48:56.265 [graviteeio-node] INFO  i.g.p.e.i.EndpointConnectorPluginHandler - Install plugin: rabbitmq [com.graviteesource.endpoint.rabbitmq.RabbitMQEndpointConnectorFactory]
+06:48:56.268 [graviteeio-node] WARN  i.g.p.e.i.EndpointConnectorPluginHandler - Plugin 'rabbitmq' detected but not activated.
+06:48:56.268 [graviteeio-node] INFO  i.g.p.f.i.FetcherPluginHandler - Install plugin: bitbucket-fetcher [io.gravitee.fetcher.bitbucket.BitbucketFetcher]
+06:48:56.270 [graviteeio-node] INFO  i.g.p.f.i.FetcherPluginHandler - Plugin 'bitbucket-fetcher' installed.
+06:48:56.270 [graviteeio-node] INFO  i.g.p.d.i.ServiceDiscoveryPluginHandler - Install plugin: consul-service-discovery [io.gravitee.discovery.consul.ConsulServiceDiscovery]
+06:48:56.272 [graviteeio-node] INFO  i.g.p.d.i.ServiceDiscoveryPluginHandler - Plugin 'consul-service-discovery' installed.
+06:48:56.273 [graviteeio-node] INFO  i.g.p.e.i.EndpointConnectorPluginHandler - Install plugin: mqtt5 [com.graviteesource.endpoint.mqtt5.Mqtt5EndpointConnectorFactory]
+06:48:56.275 [graviteeio-node] WARN  i.g.p.e.i.EndpointConnectorPluginHandler - Plugin 'mqtt5' detected but not activated.
+06:48:56.276 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: traffic-shadowing [io.gravitee.policy.trafficshadowing.TrafficShadowingPolicy]
+06:48:56.279 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'traffic-shadowing' installed.
+06:48:56.279 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: traffic-shadowing [io.gravitee.policy.trafficshadowing.TrafficShadowingPolicy]
+06:48:56.281 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'traffic-shadowing' installed.
+06:48:56.281 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: xml-validation [io.gravitee.policy.xmlvalidation.XmlValidationPolicy]
+06:48:56.283 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Add a Swagger visitor for policy: idxml-validation
+06:48:56.283 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'xml-validation' installed.
+06:48:56.283 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: xml-validation [io.gravitee.policy.xmlvalidation.XmlValidationPolicy]
+06:48:56.284 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'xml-validation' installed.
+06:48:56.284 [graviteeio-node] INFO  i.g.p.r.i.ResourcePluginHandler - Install plugin: content-provider-inline-resource [io.gravitee.resource.content_provider.inline.ContentProviderInlineResource]
+06:48:56.285 [graviteeio-node] INFO  i.g.p.r.i.ResourcePluginHandler - Plugin 'content-provider-inline-resource' installed.
+06:48:56.286 [graviteeio-node] INFO  i.g.n.p.s.h.ServicePluginHandler - Install plugin: subscriptions-refresher [io.gravitee.rest.api.services.subscriptions.ScheduledSubscriptionsService]
+06:48:56.291 [graviteeio-node] INFO  i.g.n.p.s.h.ServicePluginHandler - Plugin 'subscriptions-refresher' installed.
+06:48:56.292 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: json-threat-protection [io.gravitee.policy.threatprotection.json.JsonThreatProtectionPolicy]
+06:48:56.293 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'json-threat-protection' installed.
+06:48:56.293 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: json-threat-protection [io.gravitee.policy.threatprotection.json.JsonThreatProtectionPolicy]
+06:48:56.295 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'json-threat-protection' installed.
+06:48:56.295 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: message-filtering [io.gravitee.policy.messagefiltering.MessageFilteringPolicy]
+06:48:56.296 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'message-filtering' installed.
+06:48:56.296 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: message-filtering [io.gravitee.policy.messagefiltering.MessageFilteringPolicy]
+06:48:56.297 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'message-filtering' installed.
+06:48:56.298 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: cloud-events [com.graviteesource.policy.cloudevents.CloudEventsTransformationPolicy]
+06:48:56.301 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'cloud-events' installed.
+06:48:56.302 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: cloud-events [com.graviteesource.policy.cloudevents.CloudEventsTransformationPolicy]
+06:48:56.303 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'cloud-events' installed.
+06:48:56.303 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: latency [io.gravitee.policy.latency.LatencyPolicy]
+06:48:56.304 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'latency' installed.
+06:48:56.304 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: latency [io.gravitee.policy.latency.LatencyPolicy]
+06:48:56.305 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'latency' installed.
+06:48:56.305 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: data-cache [com.graviteesource.policy.data.cache.DataCachePolicy]
+06:48:56.307 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'data-cache' installed.
+06:48:56.307 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: data-cache [com.graviteesource.policy.data.cache.DataCachePolicy]
+06:48:56.308 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'data-cache' installed.
+06:48:56.309 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: policy-assign-metrics [com.graviteesource.policy.assignmetrics.AssignMetricsPolicy]
+06:48:56.310 [graviteeio-node] WARN  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'policy-assign-metrics' detected but not activated.
+06:48:56.310 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: policy-assign-metrics [com.graviteesource.policy.assignmetrics.AssignMetricsPolicy]
+06:48:56.311 [graviteeio-node] WARN  i.g.p.p.internal.PolicyPluginHandler - Plugin 'policy-assign-metrics' detected but not activated.
+06:48:56.311 [graviteeio-node] INFO  i.g.p.e.i.EntrypointConnectorPluginHandler - Install plugin: webhook [com.graviteesource.entrypoint.webhook.WebhookEntrypointConnectorFactory]
+06:48:56.314 [graviteeio-node] WARN  i.g.p.e.i.EntrypointConnectorPluginHandler - Plugin 'webhook' detected but not activated.
+06:48:56.314 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: jws [io.gravitee.policy.jws.JWSPolicy]
+06:48:56.316 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'jws' installed.
+06:48:56.316 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: jws [io.gravitee.policy.jws.JWSPolicy]
+06:48:56.318 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'jws' installed.
+06:48:56.318 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: html-json [io.gravitee.policy.html2Json.HTMLToJSONTransformationPolicy]
+06:48:56.319 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'html-json' installed.
+06:48:56.319 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: html-json [io.gravitee.policy.html2Json.HTMLToJSONTransformationPolicy]
+06:48:56.320 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'html-json' installed.
+06:48:56.320 [graviteeio-node] INFO  i.g.r.a.i.c.p.IdentityProviderPluginHandler - Register a new identity provider plugin: gravitee-idp [io.gravitee.rest.api.idp.repository.RepositoryIdentityProvider]
+06:48:56.320 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: transform-queryparams [io.gravitee.policy.transformqueryparams.TransformQueryParametersPolicy]
+06:48:56.321 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'transform-queryparams' installed.
+06:48:56.321 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: transform-queryparams [io.gravitee.policy.transformqueryparams.TransformQueryParametersPolicy]
+06:48:56.322 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'transform-queryparams' installed.
+06:48:56.322 [graviteeio-node] INFO  i.g.p.f.i.FetcherPluginHandler - Install plugin: github-fetcher [io.gravitee.fetcher.github.GitHubFetcher]
+06:48:56.324 [graviteeio-node] INFO  i.g.p.f.i.FetcherPluginHandler - Plugin 'github-fetcher' installed.
+06:48:56.324 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: dynamic-routing [io.gravitee.policy.dynamicrouting.DynamicRoutingPolicy]
+06:48:56.325 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'dynamic-routing' installed.
+06:48:56.326 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: dynamic-routing [io.gravitee.policy.dynamicrouting.DynamicRoutingPolicy]
+06:48:56.326 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'dynamic-routing' installed.
+06:48:56.327 [graviteeio-node] INFO  i.g.p.e.i.EntrypointConnectorPluginHandler - Install plugin: http-post [com.graviteesource.entrypoint.http.post.HttpPostEntrypointConnectorFactory]
+06:48:56.328 [graviteeio-node] WARN  i.g.p.e.i.EntrypointConnectorPluginHandler - Plugin 'http-post' detected but not activated.
+06:48:56.329 [graviteeio-node] INFO  i.g.p.e.i.EndpointConnectorPluginHandler - Install plugin: http-proxy [io.gravitee.plugin.endpoint.http.proxy.HttpProxyEndpointConnectorFactory]
+06:48:56.331 [graviteeio-node] INFO  i.g.p.e.i.EndpointConnectorPluginHandler - Plugin 'http-proxy' installed.
+06:48:56.331 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: rbac [io.gravitee.policy.rbac.RoleBasedAccessControlPolicy]
+06:48:56.332 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'rbac' installed.
+06:48:56.332 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: rbac [io.gravitee.policy.rbac.RoleBasedAccessControlPolicy]
+06:48:56.333 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'rbac' installed.
+06:48:56.333 [graviteeio-node] INFO  i.g.p.a.i.ApiServicePluginHandler - Install plugin: http-health-check [io.gravitee.apim.plugin.apiservice.healthcheck.http.HttpHealthCheckServiceFactory]
+06:48:56.334 [graviteeio-node] INFO  i.g.p.a.i.ApiServicePluginHandler - Plugin 'http-health-check' installed.
+06:48:56.334 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: resource-filtering [io.gravitee.policy.resourcefiltering.ResourceFilteringPolicy]
+06:48:56.335 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'resource-filtering' installed.
+06:48:56.336 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: resource-filtering [io.gravitee.policy.resourcefiltering.ResourceFilteringPolicy]
+06:48:56.336 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'resource-filtering' installed.
+06:48:56.336 [graviteeio-node] INFO  i.g.p.f.i.FetcherPluginHandler - Install plugin: http-fetcher [io.gravitee.fetcher.http.HttpFetcher]
+06:48:56.337 [graviteeio-node] INFO  i.g.p.f.i.FetcherPluginHandler - Plugin 'http-fetcher' installed.
+06:48:56.337 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: policy-request-validation [io.gravitee.policy.requestvalidation.RequestValidationPolicy]
+06:48:56.341 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Add a Swagger visitor for policy: idpolicy-request-validation
+06:48:56.341 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'policy-request-validation' installed.
+06:48:56.341 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: policy-request-validation [io.gravitee.policy.requestvalidation.RequestValidationPolicy]
+06:48:56.343 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'policy-request-validation' installed.
+06:48:56.343 [graviteeio-node] INFO  i.g.p.e.i.EndpointConnectorPluginHandler - Install plugin: tcp-proxy [io.gravitee.plugin.endpoint.tcp.proxy.TcpProxyEndpointConnectorFactory]
+06:48:56.344 [graviteeio-node] INFO  i.g.p.e.i.EndpointConnectorPluginHandler - Plugin 'tcp-proxy' installed.
+06:48:56.344 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: http-signature [io.gravitee.policy.httpsignature.HttpSignaturePolicy]
+06:48:56.346 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'http-signature' installed.
+06:48:56.348 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: http-signature [io.gravitee.policy.httpsignature.HttpSignaturePolicy]
+06:48:56.349 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'http-signature' installed.
+06:48:56.349 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: policy-data-logging-masking [com.graviteesource.policy.dataloggingmasking.DataLoggingMaskingPolicy]
+06:48:56.353 [graviteeio-node] WARN  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'policy-data-logging-masking' detected but not activated.
+06:48:56.353 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: policy-data-logging-masking [com.graviteesource.policy.dataloggingmasking.DataLoggingMaskingPolicy]
+06:48:56.354 [graviteeio-node] WARN  i.g.p.p.internal.PolicyPluginHandler - Plugin 'policy-data-logging-masking' detected but not activated.
+06:48:56.355 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: api-key [io.gravitee.policy.apikey.ApiKeyPolicy]
+06:48:56.358 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'api-key' installed.
+06:48:56.360 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: api-key [io.gravitee.policy.apikey.ApiKeyPolicy]
+06:48:56.362 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'api-key' installed.
+06:48:56.363 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: jwt [io.gravitee.policy.jwt.JWTPolicy]
+06:48:56.368 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'jwt' installed.
+06:48:56.369 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: jwt [io.gravitee.policy.jwt.JWTPolicy]
+06:48:56.373 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'jwt' installed.
+06:48:56.373 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: rate-limit [io.gravitee.policy.ratelimit.RateLimitPolicy]
+06:48:56.376 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'rate-limit' installed.
+06:48:56.376 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: rate-limit [io.gravitee.policy.ratelimit.RateLimitPolicy]
+06:48:56.379 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'rate-limit' installed.
+06:48:56.380 [graviteeio-node] INFO  i.g.p.f.i.FetcherPluginHandler - Install plugin: gitlab-fetcher [io.gravitee.fetcher.gitlab.GitlabFetcher]
+06:48:56.382 [graviteeio-node] INFO  i.g.p.f.i.FetcherPluginHandler - Plugin 'gitlab-fetcher' installed.
+06:48:56.383 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: policy-generate-jwt [io.gravitee.policy.generatejwt.GenerateJwtPolicy]
+06:48:56.385 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'policy-generate-jwt' installed.
+06:48:56.385 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: policy-generate-jwt [io.gravitee.policy.generatejwt.GenerateJwtPolicy]
+06:48:56.386 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'policy-generate-jwt' installed.
+06:48:56.386 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: spike-arrest [io.gravitee.policy.spike.SpikeArrestPolicy]
+06:48:56.389 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'spike-arrest' installed.
+06:48:56.390 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: spike-arrest [io.gravitee.policy.spike.SpikeArrestPolicy]
+06:48:56.392 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'spike-arrest' installed.
+06:48:56.392 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: url-rewriting [io.gravitee.policy.urlrewriting.URLRewritingPolicy]
+06:48:56.393 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'url-rewriting' installed.
+06:48:56.394 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: url-rewriting [io.gravitee.policy.urlrewriting.URLRewritingPolicy]
+06:48:56.394 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'url-rewriting' installed.
+06:48:56.395 [graviteeio-node] INFO  i.g.r.a.i.c.p.IdentityProviderPluginHandler - Register a new identity provider plugin: ldap-idp [io.gravitee.rest.api.idp.ldap.LdapIdentityProvider]
+06:48:56.395 [graviteeio-node] INFO  i.g.p.e.i.EntrypointConnectorPluginHandler - Install plugin: http-get [com.graviteesource.entrypoint.http.get.HttpGetEntrypointConnectorFactory]
+06:48:56.397 [graviteeio-node] WARN  i.g.p.e.i.EntrypointConnectorPluginHandler - Plugin 'http-get' detected but not activated.
+06:48:56.397 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: oas-validation [com.graviteesource.policy.oasvalidation.OASValidationPolicy]
+06:48:56.399 [graviteeio-node] WARN  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'oas-validation' detected but not activated.
+06:48:56.399 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: oas-validation [com.graviteesource.policy.oasvalidation.OASValidationPolicy]
+06:48:56.401 [graviteeio-node] WARN  i.g.p.p.internal.PolicyPluginHandler - Plugin 'oas-validation' detected but not activated.
+06:48:56.401 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: ip-filtering [io.gravitee.policy.ipfiltering.IPFilteringPolicy]
+06:48:56.403 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'ip-filtering' installed.
+06:48:56.403 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: ip-filtering [io.gravitee.policy.ipfiltering.IPFilteringPolicy]
+06:48:56.404 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'ip-filtering' installed.
+06:48:56.404 [graviteeio-node] INFO  i.g.p.a.i.ApiServicePluginHandler - Install plugin: consul-service-discovery [io.gravitee.apim.plugin.apiservice.servicediscovery.consul.ConsulServiceDiscoveryServiceFactory]
+06:48:56.405 [graviteeio-node] INFO  i.g.p.a.i.ApiServicePluginHandler - Plugin 'consul-service-discovery' installed.
+06:48:56.405 [graviteeio-node] INFO  i.g.p.c.i.ConnectorPluginHandler - Install plugin: connector-http [io.gravitee.connector.http.HttpConnectorFactory]
+06:48:56.407 [graviteeio-node] INFO  i.g.p.c.i.ConnectorConfigurationClassFinder - No connector configuration class defined for connector io.gravitee.connector.http.HttpConnectorFactory
+06:48:56.408 [graviteeio-node] INFO  i.g.p.c.i.ConnectorPluginHandler - Plugin 'connector-http' installed.
+06:48:56.408 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: json-validation [io.gravitee.policy.jsonvalidation.JsonValidationPolicy]
+06:48:56.410 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Add a Swagger visitor for policy: idjson-validation
+06:48:56.410 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'json-validation' installed.
+06:48:56.410 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: json-validation [io.gravitee.policy.jsonvalidation.JsonValidationPolicy]
+06:48:56.411 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'json-validation' installed.
+06:48:56.411 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: json-xml [io.gravitee.policy.json2xml.JsonToXmlTransformationPolicy]
+06:48:56.415 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'json-xml' installed.
+06:48:56.416 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: json-xml [io.gravitee.policy.json2xml.JsonToXmlTransformationPolicy]
+06:48:56.418 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'json-xml' installed.
+06:48:56.419 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: transform-headers [io.gravitee.policy.transformheaders.TransformHeadersPolicy]
+06:48:56.422 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'transform-headers' installed.
+06:48:56.422 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: transform-headers [io.gravitee.policy.transformheaders.TransformHeadersPolicy]
+06:48:56.423 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'transform-headers' installed.
+06:48:56.423 [graviteeio-node] INFO  i.g.p.r.i.ResourcePluginHandler - Install plugin: cache [io.gravitee.resource.cache.NodeCacheResource]
+06:48:56.424 [graviteeio-node] INFO  i.g.p.r.i.ResourcePluginHandler - Plugin 'cache' installed.
+06:48:56.424 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: xslt [com.graviteesource.policy.xslt.XSLTTransformationPolicy]
+06:48:56.426 [graviteeio-node] WARN  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'xslt' detected but not activated.
+06:48:56.426 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: xslt [com.graviteesource.policy.xslt.XSLTTransformationPolicy]
+06:48:56.427 [graviteeio-node] WARN  i.g.p.p.internal.PolicyPluginHandler - Plugin 'xslt' detected but not activated.
+06:48:56.427 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: generate-http-signature [io.gravitee.policy.generatehttpsignature.GenerateHttpSignaturePolicy]
+06:48:56.429 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'generate-http-signature' installed.
+06:48:56.431 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: generate-http-signature [io.gravitee.policy.generatehttpsignature.GenerateHttpSignaturePolicy]
+06:48:56.433 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'generate-http-signature' installed.
+06:48:56.433 [graviteeio-node] INFO  i.g.p.e.i.EntrypointConnectorPluginHandler - Install plugin: native-kafka [com.graviteesource.connector.nativekafka.entrypoint.NativeKafkaEntrypointConnectorFactory]
+06:48:56.434 [graviteeio-node] WARN  i.g.p.e.i.EntrypointConnectorPluginHandler - Plugin 'native-kafka' detected but not activated.
+06:48:56.434 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: kafka-topic-mapping [com.graviteesource.policy.kafka.topic_mapping.KafkaTopicMappingPolicy]
+06:48:56.442 [graviteeio-node] WARN  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'kafka-topic-mapping' detected but not activated.
+06:48:56.443 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: kafka-topic-mapping [com.graviteesource.policy.kafka.topic_mapping.KafkaTopicMappingPolicy]
+06:48:56.447 [graviteeio-node] WARN  i.g.p.p.internal.PolicyPluginHandler - Plugin 'kafka-topic-mapping' detected but not activated.
+06:48:56.447 [graviteeio-node] INFO  i.g.n.p.s.h.ServicePluginHandler - Install plugin: mgmt-service-dictionary [io.gravitee.rest.api.services.dictionary.DictionaryService]
+06:48:56.452 [graviteeio-node] INFO  i.g.n.p.s.h.ServicePluginHandler - Plugin 'mgmt-service-dictionary' installed.
+06:48:56.452 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Install plugin: policy-http-callout [io.gravitee.policy.callout.CalloutHttpPolicy]
+06:48:56.460 [graviteeio-node] INFO  i.g.r.a.s.i.s.p.PolicyPluginHandler - Plugin 'policy-http-callout' installed.
+06:48:56.461 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: policy-http-callout [io.gravitee.policy.callout.CalloutHttpPolicy]
+06:48:56.463 [graviteeio-node] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'policy-http-callout' installed.
+06:48:56.463 [graviteeio-node] INFO  i.g.node.container.AbstractNode - 	Starting component: NodeClusterService
+06:48:56.463 [graviteeio-node] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.node.cluster.NodeClusterService
+06:48:56.527 [graviteeio-node] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.node.plugin.cluster.standalone.StandaloneClusterManager
+06:48:56.527 [graviteeio-node] INFO  i.g.node.container.AbstractNode - 	Starting component: NodeCacheService
+06:48:56.528 [graviteeio-node] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.node.cache.NodeCacheService
+06:48:56.528 [graviteeio-node] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.node.plugin.cache.standalone.StandaloneCacheManager
+06:48:56.528 [graviteeio-node] INFO  i.g.node.container.AbstractNode - 	Starting component: ServiceManager
+06:48:56.528 [graviteeio-node] INFO  i.g.common.service.AbstractService - Initializing service Plugins - Services Manager
+06:48:56.528 [graviteeio-node] INFO  i.g.common.service.AbstractService - Initializing service Search Indexer Service
+06:48:56.528 [graviteeio-node] INFO  i.g.r.a.s.s.ScheduledSearchIndexerService - Search Indexer service has been initialized with cron [*/5 * * * * *]
+06:48:56.531 [graviteeio-node] INFO  i.g.r.a.s.s.ScheduledSubscriptionPreExpirationNotificationService - Subscription Pre Expiration Notification service has been initialized with cron [0 0 */1 * * *]
+06:48:56.531 [graviteeio-node] INFO  i.g.common.service.AbstractService - Initializing service Dynamic Properties Service
+06:48:56.531 [graviteeio-node] INFO  i.g.common.service.AbstractService - Initializing service Sync Service
+06:48:56.531 [graviteeio-node] INFO  i.g.r.a.s.sync.ScheduledSyncService - Sync service has been initialized with cron [*/5 * * * * *]
+06:48:56.532 [graviteeio-node] INFO  i.g.common.service.AbstractService - Initializing service Auto Fetch Service
+06:48:56.532 [graviteeio-node] INFO  i.g.r.a.s.f.ScheduledAutoFetchService - Auto Fetch service has been initialized with cron [0 */5 * * * *]
+06:48:56.532 [graviteeio-node] INFO  i.g.common.service.AbstractService - Initializing service Subscriptions Refresher Service
+06:48:56.532 [graviteeio-node] INFO  i.g.r.a.s.s.ScheduledSubscriptionsService - Subscriptions Refresher service has been initialized with cron [0 1 * * * *]
+06:48:56.532 [graviteeio-node] INFO  i.g.common.service.AbstractService - Initializing service Dictionary Service
+06:48:56.532 [graviteeio-node] INFO  i.g.node.container.AbstractNode - 	Starting component: ManagementService
+06:48:56.533 [graviteeio-node] INFO  i.g.common.service.AbstractService - Initializing service Node Management API service
+06:48:56.533 [graviteeio-node] INFO  i.g.node.container.AbstractNode - 	Starting component: NodeMonitoringEventHandler
+06:48:56.534 [graviteeio-node] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.node.monitoring.handler.NodeMonitoringEventHandler
+06:48:56.535 [vert.x-eventloop-thread-2] INFO  i.g.n.m.h.v.v.ManagementVerticle - Start HTTP listener for Node Management API
+06:48:56.536 [graviteeio-node] INFO  i.g.node.container.AbstractNode - 	Starting component: NodeInfosService
+06:48:56.540 [graviteeio-node] INFO  i.g.n.m.infos.NodeInfosService - Starting node infos service
+06:48:56.540 [graviteeio-node] INFO  i.g.common.service.AbstractService - Initializing service Node Infos Service
+06:48:56.543 [graviteeio-node] INFO  i.g.n.m.infos.NodeInfosService - Start node infos service: DONE
+06:48:56.543 [graviteeio-node] INFO  i.g.node.container.AbstractNode - 	Starting component: NodeHealthCheckService
+06:48:56.543 [graviteeio-node] INFO  i.g.common.service.AbstractService - Initializing service Node Health-check service
+06:48:56.544 [vert.x-eventloop-thread-2] INFO  i.g.n.m.h.v.v.ManagementVerticle - Register a new endpoint for Management API: [GET] /license [io.gravitee.node.license.management.NodeLicenseManagementEndpoint]
+06:48:56.544 [graviteeio-node] INFO  i.g.n.m.h.v.v.ManagementVerticle - Register a new endpoint for Management API: [GET] /health [io.gravitee.node.monitoring.healthcheck.NodeHealthCheckManagementEndpoint]
+06:48:56.544 [vert.x-eventloop-thread-2] INFO  i.g.n.m.h.v.v.ManagementVerticle - Register a new endpoint for Management API: [GET] /cluster [io.gravitee.node.cluster.endpoint.ClusterEndpoint]
+06:48:56.544 [vert.x-eventloop-thread-2] INFO  i.g.n.m.h.v.v.ManagementVerticle - Register a new endpoint for Management API: [GET] / [io.gravitee.node.management.http.node.NodeEndpoint]
+06:48:56.545 [vert.x-eventloop-thread-2] INFO  i.g.n.m.h.v.v.ManagementVerticle - Register a new endpoint for Management API: [GET] /configuration [io.gravitee.node.management.http.configuration.ConfigurationEndpoint]
+06:48:56.545 [vert.x-eventloop-thread-2] INFO  i.g.n.m.h.v.v.ManagementVerticle - Register a new endpoint for Management API: [POST, GET] /logging [io.gravitee.node.management.http.node.log.LoggingEndpoint]
+06:48:56.545 [graviteeio-node] INFO  i.g.n.m.h.NodeHealthCheckService - Node health check scheduled with fixed delay 5000 MILLISECONDS 
+06:48:56.545 [graviteeio-node] INFO  i.g.node.container.AbstractNode - 	Starting component: NodeMonitorService
+06:48:56.545 [graviteeio-node] INFO  i.g.common.service.AbstractService - Initializing service Node Monitor Service
+06:48:56.545 [vert.x-eventloop-thread-2] INFO  i.g.n.m.h.v.v.ManagementVerticle - HTTP listener for Node Management bind to port TCP:18083
+06:48:56.550 [graviteeio-node] INFO  i.g.n.m.monitor.NodeMonitorService - Node monitoring scheduled with fixed delay 5000 MILLISECONDS 
+06:48:56.553 [graviteeio-node] INFO  i.g.n.m.h.v.v.ManagementVerticle - Register a new endpoint for Management API: [GET] /monitor [io.gravitee.node.monitoring.monitor.NodeMonitorManagementEndpoint]
+06:48:56.553 [graviteeio-node] INFO  i.g.node.container.AbstractNode - 	Starting component: ReporterManager
+06:48:56.554 [graviteeio-node] INFO  i.g.common.service.AbstractService - Initializing service Reporter service
+06:48:56.554 [graviteeio-node] INFO  i.g.node.container.AbstractNode - 	Starting component: JettyEmbeddedContainer
+06:48:56.556 [vert.x-eventloop-thread-1] INFO  i.g.n.r.vertx.ReporterManagerImpl - 	There is no reporter to start
+06:48:56.623 [graviteeio-node] INFO  org.eclipse.jetty.server.Server - jetty-12.0.17; built: 2025-03-03T13:15:05.903Z; git: 14d19c268e4cb09afc312b5255a4cbb7a95c5cb6; jvm 21.0.7+6-LTS
+06:48:56.628 [graviteeio-node] INFO  o.e.jetty.server.RequestLogWriter - Opened /opt/graviteeio-management-api/logs/gravitee_accesslog_2025_06_10.log
+06:48:56.632 [graviteeio-node] INFO  o.e.j.s.DefaultSessionIdManager - Session workerName=node0
+06:48:56.634 [graviteeio-node] INFO  o.e.j.server.handler.ContextHandler - Started oeje10s.ServletContextHandler@75345061{/portal,/portal,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@4f99290b{STARTED}}
+06:48:56.635 [graviteeio-node] INFO  o.e.j.s.h.ContextHandler._portal - Initializing Spring root WebApplicationContext
+06:48:56.657 [graviteeio-node] INFO  i.g.r.a.s.a.i.AuthenticationProviderManagerImpl - Loading authentication providers
+06:48:56.682 [graviteeio-node] WARN  i.g.r.a.p.s.c.BasicSecurityConfigurerAdapter - 
+06:48:56.682 [graviteeio-node] WARN  i.g.r.a.p.s.c.BasicSecurityConfigurerAdapter - ##############################################################
+06:48:56.682 [graviteeio-node] WARN  i.g.r.a.p.s.c.BasicSecurityConfigurerAdapter - #                      SECURITY WARNING                      #
+06:48:56.683 [graviteeio-node] WARN  i.g.r.a.p.s.c.BasicSecurityConfigurerAdapter - ##############################################################
+06:48:56.683 [graviteeio-node] WARN  i.g.r.a.p.s.c.BasicSecurityConfigurerAdapter - 
+06:48:56.683 [graviteeio-node] WARN  i.g.r.a.p.s.c.BasicSecurityConfigurerAdapter - You still use the default jwt secret.
+06:48:56.683 [graviteeio-node] WARN  i.g.r.a.p.s.c.BasicSecurityConfigurerAdapter - This known secret can be used to impersonate anyone.
+06:48:56.683 [graviteeio-node] WARN  i.g.r.a.p.s.c.BasicSecurityConfigurerAdapter - Please change this value, or ask your administrator to do it !
+06:48:56.683 [graviteeio-node] WARN  i.g.r.a.p.s.c.BasicSecurityConfigurerAdapter - 
+06:48:56.684 [graviteeio-node] WARN  i.g.r.a.p.s.c.BasicSecurityConfigurerAdapter - ##############################################################
+06:48:56.684 [graviteeio-node] WARN  i.g.r.a.p.s.c.BasicSecurityConfigurerAdapter - 
+06:48:56.684 [graviteeio-node] INFO  i.g.r.a.p.s.c.BasicSecurityConfigurerAdapter - --------------------------------------------------------------
+06:48:56.684 [graviteeio-node] INFO  i.g.r.a.p.s.c.BasicSecurityConfigurerAdapter - Portal API BasicSecurity Config
+06:48:56.684 [graviteeio-node] INFO  i.g.r.a.p.s.c.BasicSecurityConfigurerAdapter - Loading authentication identity providers for Basic authentication
+06:48:56.684 [graviteeio-node] INFO  i.g.r.a.p.s.c.BasicSecurityConfigurerAdapter - Loading authentication provider of type memory at position 0
+06:48:56.699 [graviteeio-node] INFO  i.g.r.a.p.s.c.BasicSecurityConfigurerAdapter - Loading authentication provider of type gravitee at position 1
+06:48:56.708 [graviteeio-node] INFO  i.g.r.a.p.s.c.BasicSecurityConfigurerAdapter - --------------------------------------------------------------
+06:48:56.713 [graviteeio-node] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry - One of the patterns in [**] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+06:48:56.970 [graviteeio-node] INFO  o.e.j.e.s.ServletContextHandler - Started oeje10s.ServletContextHandler@75345061{/portal,/portal,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@4f99290b{STARTED}}
+06:48:56.972 [graviteeio-node] INFO  o.e.j.server.handler.ContextHandler - Started oeje10s.ServletContextHandler@48fe904f{/management,/management,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@37347be1{STARTED}}
+06:48:56.972 [graviteeio-node] INFO  o.e.j.s.h.ContextHandler._management - Initializing Spring root WebApplicationContext
+06:48:56.981 [graviteeio-node] INFO  i.g.r.a.s.a.i.AuthenticationProviderManagerImpl - Loading authentication providers
+06:48:56.985 [graviteeio-node] WARN  i.g.r.a.m.s.c.BasicSecurityConfigurerAdapter - 
+06:48:56.985 [graviteeio-node] WARN  i.g.r.a.m.s.c.BasicSecurityConfigurerAdapter - ##############################################################
+06:48:56.985 [graviteeio-node] WARN  i.g.r.a.m.s.c.BasicSecurityConfigurerAdapter - #                      SECURITY WARNING                      #
+06:48:56.985 [graviteeio-node] WARN  i.g.r.a.m.s.c.BasicSecurityConfigurerAdapter - ##############################################################
+06:48:56.985 [graviteeio-node] WARN  i.g.r.a.m.s.c.BasicSecurityConfigurerAdapter - 
+06:48:56.985 [graviteeio-node] WARN  i.g.r.a.m.s.c.BasicSecurityConfigurerAdapter - You still use the default jwt secret.
+06:48:56.985 [graviteeio-node] WARN  i.g.r.a.m.s.c.BasicSecurityConfigurerAdapter - This known secret can be used to impersonate anyone.
+06:48:56.986 [graviteeio-node] WARN  i.g.r.a.m.s.c.BasicSecurityConfigurerAdapter - Please change this value, or ask your administrator to do it !
+06:48:56.986 [graviteeio-node] WARN  i.g.r.a.m.s.c.BasicSecurityConfigurerAdapter - 
+06:48:56.986 [graviteeio-node] WARN  i.g.r.a.m.s.c.BasicSecurityConfigurerAdapter - ##############################################################
+06:48:56.986 [graviteeio-node] WARN  i.g.r.a.m.s.c.BasicSecurityConfigurerAdapter - 
+06:48:56.986 [graviteeio-node] INFO  i.g.r.a.m.s.c.BasicSecurityConfigurerAdapter - --------------------------------------------------------------
+06:48:56.986 [graviteeio-node] INFO  i.g.r.a.m.s.c.BasicSecurityConfigurerAdapter - Management API BasicSecurity Config
+06:48:56.986 [graviteeio-node] INFO  i.g.r.a.m.s.c.BasicSecurityConfigurerAdapter - Loading authentication identity providers for Basic authentication
+06:48:56.986 [graviteeio-node] INFO  i.g.r.a.m.s.c.BasicSecurityConfigurerAdapter - Loading authentication provider of type memory at position 0
+06:48:56.989 [graviteeio-node] INFO  i.g.r.a.m.s.c.BasicSecurityConfigurerAdapter - Loading authentication provider of type gravitee at position 1
+06:48:56.992 [graviteeio-node] INFO  i.g.r.a.m.s.c.BasicSecurityConfigurerAdapter - --------------------------------------------------------------
+06:48:56.992 [graviteeio-node] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry - One of the patterns in [**] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+06:48:57.043 [graviteeio-node] INFO  o.e.j.e.s.ServletContextHandler - Started oeje10s.ServletContextHandler@48fe904f{/management,/management,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@37347be1{STARTED}}
+06:48:57.044 [graviteeio-node] INFO  o.e.j.server.handler.ContextHandler - Started oeje10s.ServletContextHandler@546debe2{/management/v2,/management/v2,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@5550dd6a{STARTED}}
+06:48:57.044 [graviteeio-node] INFO  o.e.j.s.h.C._management_v2 - Initializing Spring root WebApplicationContext
+06:48:57.052 [graviteeio-node] INFO  i.g.r.a.s.a.i.AuthenticationProviderManagerImpl - Loading authentication providers
+06:48:57.055 [graviteeio-node] WARN  i.g.r.a.m.v.s.c.BasicSecurityConfigurerAdapter - 
+06:48:57.055 [graviteeio-node] WARN  i.g.r.a.m.v.s.c.BasicSecurityConfigurerAdapter - ##############################################################
+06:48:57.055 [graviteeio-node] WARN  i.g.r.a.m.v.s.c.BasicSecurityConfigurerAdapter - #                      SECURITY WARNING                      #
+06:48:57.055 [graviteeio-node] WARN  i.g.r.a.m.v.s.c.BasicSecurityConfigurerAdapter - ##############################################################
+06:48:57.055 [graviteeio-node] WARN  i.g.r.a.m.v.s.c.BasicSecurityConfigurerAdapter - 
+06:48:57.055 [graviteeio-node] WARN  i.g.r.a.m.v.s.c.BasicSecurityConfigurerAdapter - You still use the default jwt secret.
+06:48:57.055 [graviteeio-node] WARN  i.g.r.a.m.v.s.c.BasicSecurityConfigurerAdapter - This known secret can be used to impersonate anyone.
+06:48:57.055 [graviteeio-node] WARN  i.g.r.a.m.v.s.c.BasicSecurityConfigurerAdapter - Please change this value, or ask your administrator to do it !
+06:48:57.055 [graviteeio-node] WARN  i.g.r.a.m.v.s.c.BasicSecurityConfigurerAdapter - 
+06:48:57.056 [graviteeio-node] WARN  i.g.r.a.m.v.s.c.BasicSecurityConfigurerAdapter - ##############################################################
+06:48:57.056 [graviteeio-node] WARN  i.g.r.a.m.v.s.c.BasicSecurityConfigurerAdapter - 
+06:48:57.056 [graviteeio-node] INFO  i.g.r.a.m.v.s.c.BasicSecurityConfigurerAdapter - --------------------------------------------------------------
+06:48:57.056 [graviteeio-node] INFO  i.g.r.a.m.v.s.c.BasicSecurityConfigurerAdapter - Management API BasicSecurity Config
+06:48:57.056 [graviteeio-node] INFO  i.g.r.a.m.v.s.c.BasicSecurityConfigurerAdapter - Loading authentication identity providers for Basic authentication
+06:48:57.056 [graviteeio-node] INFO  i.g.r.a.m.v.s.c.BasicSecurityConfigurerAdapter - Loading authentication provider of type memory at position 0
+06:48:57.059 [graviteeio-node] INFO  i.g.r.a.m.v.s.c.BasicSecurityConfigurerAdapter - Loading authentication provider of type gravitee at position 1
+06:48:57.061 [graviteeio-node] INFO  i.g.r.a.m.v.s.c.BasicSecurityConfigurerAdapter - --------------------------------------------------------------
+06:48:57.062 [graviteeio-node] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry - One of the patterns in [**] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+06:48:57.124 [graviteeio-node] INFO  o.e.j.e.s.ServletContextHandler - Started oeje10s.ServletContextHandler@546debe2{/management/v2,/management/v2,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@5550dd6a{STARTED}}
+06:48:57.127 [graviteeio-node] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@22487372{HTTP/1.1, (http/1.1)}{0.0.0.0:8083}
+06:48:57.128 [graviteeio-node] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@2532efdf{STARTING}[12.0.17,sto=0] @7058ms
+06:48:57.128 [graviteeio-node] INFO  i.g.node.container.AbstractNode - 	Starting component: AlertTriggerProviderManager
+06:48:57.128 [graviteeio-node] INFO  i.g.common.service.AbstractService - Initializing service Alert Engine - Trigger provider manager
+06:48:57.129 [graviteeio-node] INFO  i.g.a.connector.ws.WsTriggerProvider - AlertEngine connector is enabled. Starting connector.
+06:48:57.130 [graviteeio-node] INFO  i.g.a.c.ws.WebSocketConnector - AlertEngine connector is disabled.
+06:48:57.131 [graviteeio-node] INFO  i.g.node.container.AbstractNode - 	Starting component: AlertEventProducerManager
+06:48:57.131 [graviteeio-node] INFO  i.g.common.service.AbstractService - Initializing service Alert Engine - Event producer
+06:48:57.132 [graviteeio-node] INFO  i.g.ae.connector.ws.WsEventProducer - AlertEngine connector is enabled. Starting connector.
+06:48:57.132 [graviteeio-node] INFO  i.g.ae.connector.ws.HttpConnector - AlertEngine connector is disabled.
+06:48:57.135 [graviteeio-node] INFO  i.g.node.container.AbstractNode - 	Starting component: ScheduledCommandService
+06:48:57.135 [graviteeio-node] INFO  i.g.common.service.AbstractService - Initializing service Scheduled Command Service
+06:48:57.136 [graviteeio-node] INFO  i.g.node.container.AbstractNode - 	Starting component: ManagementApiServicesManager
+06:48:57.136 [graviteeio-node] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.apim.infra.plugin.ManagementApiServicesManager
+06:48:57.136 [graviteeio-node] INFO  i.g.node.container.AbstractNode - 	Starting component: UpgraderServiceImpl
+06:48:57.136 [graviteeio-node] INFO  i.g.common.service.AbstractService - Initializing service Upgrader service
+06:48:57.139 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply InstallationKeyStatusUpgrader ...
+06:48:57.150 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply GroupsEnvironmentIdCollationIndexUpgrader ...
+06:48:57.151 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index name_collation_1 on collection groups
+06:48:57.160 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply HostIndexUpgrader ...
+06:48:57.160 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index h1 on collection access_points
+06:48:57.166 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ReferenceIdReferenceTypeIndexUpgrader ...
+06:48:57.166 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index rt_ri1 on collection access_points
+06:48:57.169 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ReferenceIdReferenceTypeTargetIndexUpgrader ...
+06:48:57.169 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ri_rt_t1 on collection access_points
+06:48:57.171 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply TargetIndexUpgrader ...
+06:48:57.171 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index t1 on collection access_points
+06:48:57.174 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply AlertCreatedAtIndexUpgrader ...
+06:48:57.175 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index a1c1 on collection alert_events
+06:48:57.181 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply AlertIndexUpgrader ...
+06:48:57.181 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index a1 on collection alert_events
+06:48:57.183 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply CreatedAtIndexUpgrader ...
+06:48:57.183 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index c1 on collection alert_events
+06:48:57.187 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ReferenceIdReferenceTypeIndexUpgrader ...
+06:48:57.187 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index rt1ri1 on collection alert_triggers
+06:48:57.192 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ApiIdCategoryIdIndexUpgrader ...
+06:48:57.192 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index aco1aici on collection api_category_orders
+06:48:57.199 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply CategoryIdIndexUpgrader ...
+06:48:57.199 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index aco1ci on collection api_category_orders
+06:48:57.202 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply EnvironmentIdIndexUpgrader ...
+06:48:57.202 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ei1 on collection apiheaders
+06:48:57.207 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ApiIndexUpgrader ...
+06:48:57.208 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ia1 on collection apiqualityrules
+06:48:57.214 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply QualityRuleIndexUpgrader ...
+06:48:57.214 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index iqr1 on collection apiqualityrules
+06:48:57.217 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ApiLifeCycleStateIndexUpgrader ...
+06:48:57.217 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index als1 on collection apis
+06:48:57.223 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply CategoriesIndexUpgrader ...
+06:48:57.223 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index c1 on collection apis
+06:48:57.225 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply CrossIdIndexUpgrader ...
+06:48:57.226 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ci1 on collection apis
+06:48:57.228 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply DefinitionVersionIndexUpgrader ...
+06:48:57.228 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index dv1 on collection apis
+06:48:57.231 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply EnvironmentIdNameDefinitionVersionIndexUpgrader ...
+06:48:57.231 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ei1n1dv1 on collection apis
+06:48:57.234 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply GroupsIndexUpgrader ...
+06:48:57.234 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index g1 on collection apis
+06:48:57.236 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply IntegrationIdIndexUpgrader ...
+06:48:57.236 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ii1 on collection apis
+06:48:57.238 [RxComputationThreadPool-3] WARN  i.g.ae.connector.ws.WsEventProducer - An error occurred trying to send events: The connector is not yet ready
+06:48:57.240 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply LabelsIndexUpgrader ...
+06:48:57.240 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index l1 on collection apis
+06:48:57.243 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply LifeCycleStateIndexUpgrader ...
+06:48:57.243 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ls1 on collection apis
+06:48:57.245 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply NameIndexUpgrader ...
+06:48:57.246 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index n1 on collection apis
+06:48:57.249 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply VersionIndexUpgrader ...
+06:48:57.250 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ve1 on collection apis
+06:48:57.252 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply VisibilityIndexUpgrader ...
+06:48:57.252 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index v1 on collection apis
+06:48:57.255 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply EnvironmentIdIndexUpgrader ...
+06:48:57.255 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ei1 on collection applications
+06:48:57.261 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply GroupsIndexUpgrader ...
+06:48:57.261 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index g1 on collection applications
+06:48:57.264 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply NameIndexUpgrader ...
+06:48:57.264 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index n1 on collection applications
+06:48:57.267 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply StatusIndexUpgrader ...
+06:48:57.267 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index s1 on collection applications
+06:48:57.269 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply InitiatorIdTypeStatusIndexUpgrader ...
+06:48:57.269 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index i1t1s1 on collection asyncjobs
+06:48:57.275 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply SourceIdStatusIndexUpgrader ...
+06:48:57.275 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index sis1 on collection asyncjobs
+06:48:57.278 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply StatusIndexUpgrader ...
+06:48:57.278 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index s1 on collection asyncjobs
+06:48:57.280 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply TypeStatusIndexUpgrader ...
+06:48:57.280 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index t1s1 on collection asyncjobs
+06:48:57.283 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply CreatedAtIndexUpgrader ...
+06:48:57.283 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index c1 on collection audits
+06:48:57.289 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply EnvironmentIdIndexUpgrader ...
+06:48:57.289 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ei1 on collection audits
+06:48:57.291 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply EventIndexUpgrader ...
+06:48:57.291 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index e1 on collection audits
+06:48:57.294 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply OrganizationIdIndexUpgrader ...
+06:48:57.294 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index oi1 on collection audits
+06:48:57.297 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ReferenceIdReferenceTypeIndexUpgrader ...
+06:48:57.297 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ri1rt1 on collection audits
+06:48:57.299 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ReferenceTypeIndexUpgrader ...
+06:48:57.300 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index rt1 on collection audits
+06:48:57.302 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply EnvironmentIdIndexUpgrader ...
+06:48:57.302 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ei1 on collection categories
+06:48:57.308 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply PageIndexUpgrader ...
+06:48:57.308 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index p1 on collection categories
+06:48:57.311 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply EnvironmentIdIdIndexUpgrader ...
+06:48:57.311 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ei1 on collection client_registration_providers
+06:48:57.317 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply AcknowledgmentsIndexUpgrader ...
+06:48:57.317 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index a1 on collection commands
+06:48:57.322 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply EnvironmentIdUpgrader ...
+06:48:57.322 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ei1 on collection commands
+06:48:57.325 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ExpiredAtIndexUpgrader ...
+06:48:57.326 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ea1 on collection commands
+06:48:57.328 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply FromIndexUpgrader ...
+06:48:57.329 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index f1 on collection commands
+06:48:57.331 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply OrganizationIdUpgrader ...
+06:48:57.331 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index oi1 on collection commands
+06:48:57.334 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply TagsIndexUpgrader ...
+06:48:57.334 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index t1 on collection commands
+06:48:57.337 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ToIndexUpgrader ...
+06:48:57.337 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index to1 on collection commands
+06:48:57.339 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ReferenceIdReferenceTypeIndexUpgrader ...
+06:48:57.339 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index iri1irt1 on collection custom_user_fields
+06:48:57.345 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ReferenceTypeIndexUpgrader ...
+06:48:57.345 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index rt1 on collection dashboards
+06:48:57.350 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply EnvironmentIdIndexUpgrader ...
+06:48:57.351 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ei1 on collection dictionaries
+06:48:57.356 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ReferenceIdReferenceTypeIndexUpgrader ...
+06:48:57.356 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ri1 on collection entrypoints
+06:48:57.362 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply CockpitIdIndexUpgrader ...
+06:48:57.362 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ci1 on collection environments
+06:48:57.367 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply HridsIndexUpgrader ...
+06:48:57.367 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index hi1 on collection environments
+06:48:57.370 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply OrganizationIdIndexUpgrader ...
+06:48:57.370 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index oi1 on collection environments
+06:48:57.372 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ApiPropertyIndexUpgrader ...
+06:48:57.372 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index pa1 on collection events
+06:48:57.378 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply EnvironmentsIndexUpgrader ...
+06:48:57.378 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ei1 on collection events
+06:48:57.385 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply OrganizationsIndexUpgrader ...
+06:48:57.385 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index eo1 on collection events
+06:48:57.391 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply PropertiesApiIdEnvsUpdatedAtIdTypeIndexUpgrader ...
+06:48:57.391 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index pa1e1u1i1t1 on collection events
+06:48:57.397 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply PropertiesApiIdTypeEnvsIndexUpgrader ...
+06:48:57.397 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index pa1t1e1 on collection events
+06:48:57.404 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply PropertiesApiIdUpdatedAtEnvsIndexUpgrader ...
+06:48:57.404 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index pa1u1e1 on collection events
+06:48:57.411 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply PropertiesDictionaryIdUpdatedEnvsAtIndexUpgrader ...
+06:48:57.411 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index pdi1u1e1 on collection events
+06:48:57.418 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply TypeUpdatedAtIndexUpgrader ...
+06:48:57.418 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index t1u1 on collection events
+06:48:57.424 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply UpdatedAtDescIndexUpgrader ...
+06:48:57.424 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index u1i1 on collection events
+06:48:57.431 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply EnvironmentsIndexUpgrader ...
+06:48:57.431 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ei1 on collection events_latest
+06:48:57.438 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply OrganizationsIndexUpgrader ...
+06:48:57.438 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index eo1 on collection events_latest
+06:48:57.441 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply PropertyApiIdTypeEnvsIndexUpgrader ...
+06:48:57.441 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index pai1t1e1 on collection events_latest
+06:48:57.444 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply PropertyDictionaryIdEnvsIndexUpgrader ...
+06:48:57.444 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index pdi1e1 on collection events_latest
+06:48:57.448 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply PropertyKeyIndexUpgrader ...
+06:48:57.448 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index pk1 on collection events_latest
+06:48:57.452 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply TypeUpdatedAtPropertyApiIdEnvsIndexUpgrader ...
+06:48:57.452 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index t1u1pai1e1 on collection events_latest
+06:48:57.455 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply TypeUpdatedAtPropertyDictionaryIdEnvsIndexUpgrader ...
+06:48:57.456 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index t1u1pdi1e1 on collection events_latest
+06:48:57.459 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ReferenceIdReferenceTypeIndexUpgrader ...
+06:48:57.459 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ri1rt1 on collection flows
+06:48:57.466 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ReferenceIdReferenceTypeOrderIndexUpgrader ...
+06:48:57.466 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ri1rt1o1 on collection flows
+06:48:57.472 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ConfigIndexUpgrader ...
+06:48:57.473 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index c1 on collection genericnotificationconfigs
+06:48:57.479 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ReferenceIdReferenceTypeIndexUpgrader ...
+06:48:57.479 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ri1rt1 on collection genericnotificationconfigs
+06:48:57.483 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply EnvironmentIdIndexUpgrader ...
+06:48:57.486 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ei1 on collection groups
+06:48:57.494 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply NameIndexUpgrader ...
+06:48:57.494 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index name_1 on collection groups
+06:48:57.497 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply IdentityProviderIdIndexUpgrader ...
+06:48:57.497 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ipi1 on collection identity_provider_activations
+06:48:57.505 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ReferenceIdReferenceTypeIndexUpgrader ...
+06:48:57.505 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ri1rt1 on collection identity_provider_activations
+06:48:57.508 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply OrganizationIdIndexUpgrader ...
+06:48:57.509 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index oi1 on collection identity_providers
+06:48:57.515 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply EnvironmentIdIndexUpgrader ...
+06:48:57.516 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ei1 on collection asyncjobs
+06:48:57.519 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply EnvironmentIdIndexUpgrader ...
+06:48:57.522 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ei1 on collection integrations
+06:48:57.529 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ReferenceIdReferenceTypeIndexUpgrader ...
+06:48:57.529 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ri1rt1 on collection invitations
+06:48:57.536 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ApplicationIndexUpgrader ...
+06:48:57.536 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index a1 on collection keys
+06:48:57.543 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply EnvironmentIdIndexUpgrader ...
+06:48:57.543 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index e1 on collection keys
+06:48:57.546 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply FederatedIndexUpgrader ...
+06:48:57.546 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index f1 on collection keys
+06:48:57.549 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply KeyIndexUpgrader ...
+06:48:57.549 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index k1 on collection keys
+06:48:57.552 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply PlanIndexUpgrader ...
+06:48:57.552 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index p1 on collection keys
+06:48:57.555 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply RevokedIndexUpgrader ...
+06:48:57.555 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index r1 on collection keys
+06:48:57.558 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply SubscriptionsIndexUpgrader ...
+06:48:57.559 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index s1 on collection keys
+06:48:57.561 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply UpdatedAtIndexUpgrader ...
+06:48:57.561 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index u1 on collection keys
+06:48:57.565 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply IdReferenceIdReferenceTypeIndexUpgrader ...
+06:48:57.565 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index id_rt_ri1 on collection licenses
+06:48:57.572 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ReferenceIdReferenceTypeIndexUpgrader ...
+06:48:57.572 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index rt_ri1 on collection licenses
+06:48:57.577 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply UpdatedAtIndexUpgrader ...
+06:48:57.577 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index f_t1 on collection licenses
+06:48:57.580 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply FilesApiHashIndexUpgrader ...
+06:48:57.580 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index a1h1 on collection media.files
+06:48:57.587 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply FilesEnvironmentIndexUpgrader ...
+06:48:57.588 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index e1 on collection media.files
+06:48:57.590 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply FilesOrganizationIndexUpgrader ...
+06:48:57.590 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index o1 on collection media.files
+06:48:57.593 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply MemberIdIndexUpgrader ...
+06:48:57.593 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index mi1 on collection memberships
+06:48:57.600 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply MemberIdMemberTypeIndexUpgrader ...
+06:48:57.600 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index mt1 on collection memberships
+06:48:57.603 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply MemberIdMemberTypeReferenceTypeIndexUpgrader ...
+06:48:57.603 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index mi1mt1rt1 on collection memberships
+06:48:57.606 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply MemberIdMemberTypeReferenceTypeReferenceIdIndexUpgrader ...
+06:48:57.607 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index mi1mt1rt1ri1 on collection memberships
+06:48:57.609 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply MemberIdMemberTypeReferenceTypeReferenceIdRoleIdIndexUpgrader ...
+06:48:57.609 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index mi1mt1rt1ri1ro1 on collection memberships
+06:48:57.613 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply MemberIdMemberTypeReferenceTypeRoleIdIndexUpgrader ...
+06:48:57.613 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index mi1mt1rt1ro1 on collection memberships
+06:48:57.616 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply MemberIndexUpgrader ...
+06:48:57.616 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index m1 on collection memberships
+06:48:57.619 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ReferenceIdIndexUpgrader ...
+06:48:57.620 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ri1 on collection memberships
+06:48:57.622 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ReferenceIdReferenceTypeIndexUpgrader ...
+06:48:57.622 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ri1rt1 on collection memberships
+06:48:57.626 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ReferenceIdReferenceTypeRoleIdIndexUpgrader ...
+06:48:57.626 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ri1rt1ro1 on collection memberships
+06:48:57.630 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ReferenceTypeIndexUpgrader ...
+06:48:57.630 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index rt1 on collection memberships
+06:48:57.633 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply RoleIdIndexUpgrader ...
+06:48:57.633 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ro1 on collection memberships
+06:48:57.637 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ReferenceIdReferenceTypeIndexUpgrader ...
+06:48:57.637 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index _id.referenceId+1__id.referenceType+1 on collection metadata
+06:48:57.644 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ReferenceTypeIndexUpgrader ...
+06:48:57.644 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index irt1 on collection metadata
+06:48:57.647 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply NodeIdTypeIndexUpgrader ...
+06:48:57.647 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ni1t1 on collection node_monitoring
+06:48:57.654 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply TypeUpdatedAtIndexUpgrader ...
+06:48:57.654 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ua1t1 on collection node_monitoring
+06:48:57.660 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ReferenceIdReferenceTypeIndexUpgrader ...
+06:48:57.661 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ri1rt1 on collection notificationTemplates
+06:48:57.668 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply CockpitIdIndexUpgrader ...
+06:48:57.668 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index cid1 on collection organizations
+06:48:57.680 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply HridsIndexUpgrader ...
+06:48:57.680 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index hi1 on collection organizations
+06:48:57.683 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply PageIdIndexUpgrader ...
+06:48:57.683 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index pi1 on collection page_revisions
+06:48:57.689 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply AutoFetchIndexUpgrader ...
+06:48:57.690 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index u1 on collection pages
+06:48:57.697 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply OrderIndexUpgrader ...
+06:48:57.697 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index o1 on collection pages
+06:48:57.700 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ParentIdIndexUpgrader ...
+06:48:57.700 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index pid1 on collection pages
+06:48:57.703 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ParentTypeIndexUpgrader ...
+06:48:57.703 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index p1t1 on collection pages
+06:48:57.707 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ReferenceIdReferenceTypeIndexUpgrader ...
+06:48:57.707 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ri1rt1 on collection pages
+06:48:57.711 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply TypeIndexUpgrader ...
+06:48:57.711 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index t1 on collection pages
+06:48:57.714 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ReferenceIdReferenceTypeIndexUpgrader ...
+06:48:57.715 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ri1rt1t1 on collection parameters
+06:48:57.721 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ApiIndexUpgrader ...
+06:48:57.722 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index a1 on collection plans
+06:48:57.728 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply EnvironmentIdIndexUpgrader ...
+06:48:57.728 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index e1 on collection plans
+06:48:57.732 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply EnvironmentIdIndexUpgrader ...
+06:48:57.732 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index e1o1 on collection portalMenuLinks
+06:48:57.739 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply UserIndexUpgrader ...
+06:48:57.739 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index u1 on collection portalnotifications
+06:48:57.745 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ReferenceIdReferenceTypeHooksIndexUpgrader ...
+06:48:57.746 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index iri1irt1 on collection portalnotificationconfigs
+06:48:57.753 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply UserReferenceIdReferenceTypeIndexUpgrader ...
+06:48:57.753 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index iu1iri1irt1 on collection portalnotificationconfigs
+06:48:57.755 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ApiIdIndexUpgrader ...
+06:48:57.755 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ai1 on collection promotions
+06:48:57.763 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply StatusIndexUpgrader ...
+06:48:57.763 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index s1 on collection promotions
+06:48:57.767 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply TargetApiIdIndexUpgrader ...
+06:48:57.767 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index tai1 on collection promotions
+06:48:57.770 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply TargetEnvCockpitIdIndexUpgrader ...
+06:48:57.770 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index teci1 on collection promotions
+06:48:57.773 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ReferenceIdReferenceTypeIndexUpgrader ...
+06:48:57.773 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ri1rt1 on collection qualityrules
+06:48:57.780 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ApiIndexUpgrader ...
+06:48:57.780 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index a1 on collection rating
+06:48:57.787 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply RateDescIndexUpgrader ...
+06:48:57.787 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index r-1 on collection rating
+06:48:57.790 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ReferenceIdReferenceTypeIndexUpgrader ...
+06:48:57.793 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index referenceId+1_referenceType+1_type+1 on collection rating
+06:48:57.796 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply RatingIndexUpgrader ...
+06:48:57.796 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index r1 on collection ratingAnswers
+06:48:57.802 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ReferenceIdReferenceTypeIndexUpgrader ...
+06:48:57.802 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ri1rt1t1 on collection roles
+06:48:57.809 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ScopeIndexUpgrader ...
+06:48:57.809 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index s1 on collection roles
+06:48:57.812 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ReferenceIdReferenceTypeIndexUpgrader ...
+06:48:57.812 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ri1rt1 on collection scoring_functions
+06:48:57.819 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ReferenceIdReferenceTypeIndexUpgrader ...
+06:48:57.819 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ri1rt1 on collection scoring_rulesets
+06:48:57.825 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ApiIdIndexUpgrader ...
+06:48:57.825 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ai1 on collection scoring_reports
+06:48:57.832 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply EnvironmentIdIndexUpgrader ...
+06:48:57.832 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ei1 on collection scoring_reports
+06:48:57.835 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply EnvironmentIdIdIndexUpgrader ...
+06:48:57.836 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index e1i1 on collection sharedpolicygrouphistories
+06:48:57.842 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply EnvironmentIdIndexUpgrader ...
+06:48:57.842 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index e1 on collection sharedpolicygrouphistories
+06:48:57.845 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply IdIndexUpgrader ...
+06:48:57.845 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index i1 on collection sharedpolicygrouphistories
+06:48:57.848 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply EnvironmentIdCrossIdIndexUpgrader ...
+06:48:57.849 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index e1c1 on collection sharedpolicygroups
+06:48:57.854 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply EnvironmentIdNameIndexUpgrader ...
+06:48:57.855 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index e1n1 on collection sharedpolicygroups
+06:48:57.858 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ApiApplicationIndexUpgrader ...
+06:48:57.858 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index a1a1 on collection subscriptions
+06:48:57.864 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ApiStatusIndexUpgrader ...
+06:48:57.864 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index a1s1 on collection subscriptions
+06:48:57.867 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ApplicationIndexUpgrader ...
+06:48:57.868 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index a1 on collection subscriptions
+06:48:57.871 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply CreatedAtDescIndexUpgrader ...
+06:48:57.871 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index c-1 on collection subscriptions
+06:48:57.873 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply EnvironmentIdIndexUpgrader ...
+06:48:57.874 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index e1 on collection subscriptions
+06:48:57.877 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply PlanIndexUpgrader ...
+06:48:57.877 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index p1 on collection subscriptions
+06:48:57.880 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply StatusIndexUpgrader ...
+06:48:57.880 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index s1 on collection subscriptions
+06:48:57.883 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply UpdatedAtAscIndexUpgrader ...
+06:48:57.883 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ua1 on collection subscriptions
+06:48:57.886 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ReferenceIdReferenceTypeIndexUpgrader ...
+06:48:57.886 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ri1rt1 on collection tags
+06:48:57.893 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ReferenceIdReferenceTypeIndexUpgrader ...
+06:48:57.894 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ri1rt1 on collection tenants
+06:48:57.900 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply EnabledIndexUpgrader ...
+06:48:57.901 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index e1 on collection themes
+06:48:57.908 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ReferenceIdReferenceTypeIndexUpgrader ...
+06:48:57.908 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ri1rt1 on collection themes
+06:48:57.912 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply TypeIndexUpgrader ...
+06:48:57.912 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index t1 on collection themes
+06:48:57.915 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ApiFromUserCollationEnIndexUpgrader ...
+06:48:57.915 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index a1fu1en on collection tickets
+06:48:57.923 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ApiFromUserCollationSimpleIndexUpgrader ...
+06:48:57.923 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index a1fu1 on collection tickets
+06:48:57.926 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ApiSubjectDescIndexUpgrader ...
+06:48:57.927 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index s-1 on collection tickets
+06:48:57.930 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ApplicationIndexUpgrader ...
+06:48:57.930 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index a1 on collection tickets
+06:48:57.933 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply FromUserCollationEnIndexUpgrader ...
+06:48:57.934 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index fu1en on collection tickets
+06:48:57.938 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply FromUserCollationSimpleIndexUpgrader ...
+06:48:57.938 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index fu1 on collection tickets
+06:48:57.941 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ReferenceIdReferenceTypeIndexUpgrader ...
+06:48:57.941 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ri1rt1 on collection tokens
+06:48:57.948 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply OrganizationIdEmailIndexUpgrader ...
+06:48:57.948 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index oi1e1 on collection users
+06:48:57.956 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply OrganizationIdIndexUpgrader ...
+06:48:57.956 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index oi1 on collection users
+06:48:57.959 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply OrganizationIdSourceSourceIdIndexUpgrader ...
+06:48:57.959 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index oi1s1si1 on collection users
+06:48:57.962 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply StatusIndexUpgrader ...
+06:48:57.962 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index s1 on collection users
+06:48:57.966 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ReferenceIdReferenceTypeIndexUpgrader ...
+06:48:57.966 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ri1rt1 on collection workflows
+06:48:57.974 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ReferenceIdReferenceTypeTypeIndexUpgrader ...
+06:48:57.974 [graviteeio-node] INFO  i.g.r.m.m.u.u.index.IndexUpgrader - creating index ri1rt1t1 on collection workflows
+06:48:57.977 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply RemovePromotionAuthorPictureUpgrader ...
+06:48:57.981 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply DashboardTypeUpgrader ...
+06:48:57.982 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply PlanDefinitionVersionUpgrader ...
+06:48:57.984 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ThemeTypeUpgrader ...
+06:48:57.985 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply MissingEnvironmentUpgrader ...
+06:48:57.987 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply AccessPointsStatusAndUpdatedUpgrader ...
+06:48:57.988 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply MissingOrganizationsOnEventsUpgrader ...
+06:48:57.989 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ApiKeyFederatedUpgrader ...
+06:48:57.991 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply SharedPolicyGroupPhaseUpgrader ...
+06:48:57.992 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply SharedPolicyGroupHistoriesPhaseUpgrader ...
+06:48:57.993 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply SubscriptionApplicationNameUpgrader ...
+06:48:57.997 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply DefaultEnvironmentUpgrader ...
+06:48:58.008 [graviteeio-node] INFO  i.g.r.a.s.i.u.u.DefaultEnvironmentUpgrader -     No environment found. Add default one.
+06:48:58.012 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply DefaultOrganizationUpgrader ...
+06:48:58.014 [graviteeio-node] INFO  i.g.r.a.s.i.u.u.DefaultOrganizationUpgrader -     No organization found. Add default one.
+06:48:58.031 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply OrphanCategoryUpgrader ...
+06:48:58.036 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply DefaultRolesUpgrader ...
+06:48:58.040 [graviteeio-node] INFO  i.g.r.a.service.impl.RoleServiceImpl -      - <ORGANIZATION> USER (default)
+06:48:58.095 [graviteeio-node] INFO  i.g.r.a.service.impl.RoleServiceImpl -      - <ENVIRONMENT> API_PUBLISHER
+06:48:58.101 [graviteeio-node] INFO  i.g.r.a.service.impl.RoleServiceImpl -      - <ENVIRONMENT> FEDERATION_AGENT
+06:48:58.106 [graviteeio-node] INFO  i.g.r.a.service.impl.RoleServiceImpl -      - <ENVIRONMENT> USER (default)
+06:48:58.112 [graviteeio-node] INFO  i.g.r.a.service.impl.RoleServiceImpl -      - <API> USER (default)
+06:48:58.119 [graviteeio-node] INFO  i.g.r.a.service.impl.RoleServiceImpl -      - <API> OWNER
+06:48:58.124 [graviteeio-node] INFO  i.g.r.a.service.impl.RoleServiceImpl -      - <API> REVIEWER
+06:48:58.129 [graviteeio-node] INFO  i.g.r.a.service.impl.RoleServiceImpl -      - <APPLICATION> USER (default)
+06:48:58.135 [graviteeio-node] INFO  i.g.r.a.service.impl.RoleServiceImpl -      - <APPLICATION> OWNER
+06:48:58.140 [graviteeio-node] INFO  i.g.r.a.service.impl.RoleServiceImpl -      - <INTEGRATION> OWNER
+06:48:58.145 [graviteeio-node] INFO  i.g.r.a.service.impl.RoleServiceImpl -      - <INTEGRATION> USER
+06:48:58.150 [graviteeio-node] INFO  i.g.r.a.service.impl.RoleServiceImpl -       - <ORGANIZATION> ADMIN (system)
+06:48:58.153 [graviteeio-node] INFO  i.g.r.a.service.impl.RoleServiceImpl -       - <ENVIRONMENT> ADMIN (system)
+06:48:58.156 [graviteeio-node] INFO  i.g.r.a.service.impl.RoleServiceImpl -       - <API> PRIMARY_OWNER (system)
+06:48:58.158 [graviteeio-node] INFO  i.g.r.a.service.impl.RoleServiceImpl -       - <APPLICATION> PRIMARY_OWNER (system)
+06:48:58.160 [graviteeio-node] INFO  i.g.r.a.service.impl.RoleServiceImpl -       - <INTEGRATION> PRIMARY_OWNER (system)
+06:48:58.162 [graviteeio-node] INFO  i.g.r.a.service.impl.RoleServiceImpl -       - <GROUP> ADMIN (system)
+06:48:58.166 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply DefaultSharedPolicyGroupRolesUpgrader ...
+06:48:58.168 [graviteeio-node] INFO  i.g.r.a.s.i.u.u.DefaultSharedPolicyGroupRolesUpgrader - Update default role API_PUBLISHER for environment DEFAULT
+06:48:58.177 [graviteeio-node] INFO  i.g.r.a.s.i.u.u.DefaultSharedPolicyGroupRolesUpgrader - Update default role USER for environment DEFAULT
+06:48:58.187 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply EnvironmentFederationAgentRoleUpgrader ...
+06:48:58.190 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ApiPrimaryOwnerRemovalUpgrader ...
+06:48:58.198 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply MetadataDefaultReferenceUpgrader ...
+06:48:58.201 [graviteeio-node] INFO  i.g.r.a.s.i.u.u.MetadataDefaultReferenceUpgrader - Migrating metadata: 0 for environments [Environment(id=DEFAULT, cockpitId=null, hrids=[default], name=Default environment, description=Default environment, organizationId=DEFAULT)]
+06:48:58.202 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply PortalNotificationConfigUpgrader ...
+06:48:58.204 [graviteeio-node] INFO  i.g.r.a.s.i.u.u.PortalNotificationConfigUpgrader - Migrating portalNotificationConfig: 0 for environments [Environment(id=DEFAULT, cockpitId=null, hrids=[default], name=Default environment, description=Default environment, organizationId=DEFAULT)]
+06:48:58.205 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply GenericNotificationConfigUpgrader ...
+06:48:58.206 [graviteeio-node] INFO  i.g.r.a.s.i.u.u.GenericNotificationConfigUpgrader - Migrating genericNotificationConfig: 0 for environments [Environment(id=DEFAULT, cockpitId=null, hrids=[default], name=Default environment, description=Default environment, organizationId=DEFAULT)]
+06:48:58.207 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply AlertsEnvironmentUpgrader ...
+06:48:58.209 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ApplicationApiKeyModeUpgrader ...
+06:48:58.213 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply CommandOrganizationUpgrader ...
+06:48:58.215 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply PlansDataFixUpgrader ...
+06:48:58.217 [graviteeio-node] INFO  i.g.r.a.s.i.u.u.PlansDataFixUpgrader - No plan data anomaly found
+06:48:58.218 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ApiKeySubscriptionsUpgrader ...
+06:48:58.220 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ClientIdInApiKeySubscriptionsUpgrader ...
+06:48:58.225 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ApiLoggingConditionUpgrader ...
+06:48:58.229 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply PlansFlowsDefinitionUpgrader ...
+06:48:58.231 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply EventsLatestUpgrader ...
+06:48:58.231 [graviteeio-node] INFO  i.g.r.a.s.i.u.u.EventsLatestUpgrader - Starting migrating latest event for APIs
+06:48:58.232 [graviteeio-node] INFO  i.g.r.a.s.i.u.u.EventsLatestUpgrader - 0 events regarding 0 APIs have been migrated
+06:48:58.232 [graviteeio-node] INFO  i.g.r.a.s.i.u.u.EventsLatestUpgrader - Starting migrating latest event for dictionaries
+06:48:58.233 [graviteeio-node] INFO  i.g.r.a.s.i.u.u.EventsLatestUpgrader - 0 events regarding 0 dictionaries have been migrated
+06:48:58.233 [graviteeio-node] INFO  i.g.r.a.s.i.u.u.EventsLatestUpgrader - Starting migrating latest event for organizations
+06:48:58.236 [graviteeio-node] INFO  i.g.r.a.s.i.u.u.EventsLatestUpgrader - 0 events regarding 1 organizations have been migrated
+06:48:58.237 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ExecutionModeUpgrader ...
+06:48:58.237 [graviteeio-node] INFO  i.g.r.a.s.i.u.u.ExecutionModeUpgrader - Starting migrating execution mode for APIs
+06:48:58.239 [graviteeio-node] INFO  i.g.r.a.s.i.u.u.ExecutionModeUpgrader - 0 jupiter APIs have been migrated to use v4-emulation-engine execution mode
+06:48:58.240 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply QualityRulesScopingUpgrader ...
+06:48:58.240 [graviteeio-node] INFO  i.g.r.a.s.i.u.u.QualityRulesScopingUpgrader - Start scoping existing quality rules at the environment level
+06:48:58.242 [graviteeio-node] INFO  i.g.r.a.s.i.u.u.QualityRulesScopingUpgrader - Found 0 quality rules with no reference
+06:48:58.243 [graviteeio-node] INFO  i.g.r.a.s.i.u.u.QualityRulesScopingUpgrader - Default environment is [DEFAULT]
+06:48:58.243 [graviteeio-node] INFO  i.g.r.a.s.i.u.u.QualityRulesScopingUpgrader - Other environments are []
+06:48:58.245 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ApiV4CategoriesUpgrader ...
+06:48:58.246 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply ApiCategoryOrderUpgrader ...
+06:48:58.248 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply IntegrationRolesUpgrader ...
+06:48:58.250 [graviteeio-node] INFO  i.g.r.a.service.impl.RoleServiceImpl -       - <ORGANIZATION> ADMIN (system)
+06:48:58.251 [graviteeio-node] INFO  i.g.r.a.service.impl.RoleServiceImpl -       - <ENVIRONMENT> ADMIN (system)
+06:48:58.252 [graviteeio-node] INFO  i.g.r.a.service.impl.RoleServiceImpl -       - <API> PRIMARY_OWNER (system)
+06:48:58.253 [graviteeio-node] INFO  i.g.r.a.service.impl.RoleServiceImpl -       - <APPLICATION> PRIMARY_OWNER (system)
+06:48:58.254 [graviteeio-node] INFO  i.g.r.a.service.impl.RoleServiceImpl -       - <INTEGRATION> PRIMARY_OWNER (system)
+06:48:58.255 [graviteeio-node] INFO  i.g.r.a.service.impl.RoleServiceImpl -       - <GROUP> ADMIN (system)
+06:48:58.256 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply UserTokenPermissionUpgrader ...
+06:48:58.268 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply IntegrationPrimaryOwnerUpgrader ...
+06:48:58.269 [graviteeio-node] INFO  i.g.r.a.s.i.u.u.IntegrationPrimaryOwnerUpgrader - Start to set primary owners for integrations
+06:48:58.271 [graviteeio-node] INFO  i.g.r.a.s.i.u.u.IntegrationPrimaryOwnerUpgrader - Migrating page: 0 of integrations
+06:48:58.271 [graviteeio-node] INFO  i.g.r.a.s.i.u.u.IntegrationPrimaryOwnerUpgrader - Finish to set primary owners for integrations
+06:48:58.272 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply InitializeSharedPolicyGroupUpgrader ...
+06:48:58.319 [graviteeio-node] INFO  i.g.n.s.upgrader.UpgraderServiceImpl - Apply PlanApiTypeUpgrader ...
+06:48:58.319 [graviteeio-node] INFO  i.g.r.a.s.i.u.u.PlanApiTypeUpgrader - Starting migration of plan api_type...
+06:48:58.321 [graviteeio-node] INFO  i.g.r.a.s.i.u.u.PlanApiTypeUpgrader - Migration of plan api_type completed.
+06:48:58.321 [graviteeio-node] INFO  i.g.node.container.AbstractNode - 	Starting component: InitializerServiceImpl
+06:48:58.322 [graviteeio-node] INFO  i.g.common.service.AbstractService - Initializing service Initializer service
+06:48:58.322 [graviteeio-node] INFO  i.g.n.s.i.InitializerServiceImpl - Apply DefaultDashboardsInitializer ...
+06:48:58.324 [graviteeio-node] INFO  i.g.r.a.s.impl.DashboardServiceImpl -     No default PLATFORM's dashboards for environment DEFAULT, creating default ones...
+06:48:58.343 [graviteeio-node] INFO  i.g.r.a.s.impl.DashboardServiceImpl -     Added default PLATFORM's dashboards with success for environment DEFAULT
+06:48:58.343 [graviteeio-node] INFO  i.g.r.a.s.impl.DashboardServiceImpl -     No default API's dashboards for environment DEFAULT, creating default ones...
+06:48:58.350 [graviteeio-node] INFO  i.g.r.a.s.impl.DashboardServiceImpl -     Added default API's dashboards with success for environment DEFAULT
+06:48:58.350 [graviteeio-node] INFO  i.g.r.a.s.impl.DashboardServiceImpl -     No default APPLICATION's dashboards for environment DEFAULT, creating default ones...
+06:48:58.358 [graviteeio-node] INFO  i.g.r.a.s.impl.DashboardServiceImpl -     Added default APPLICATION's dashboards with success for environment DEFAULT
+06:48:58.358 [graviteeio-node] INFO  i.g.n.s.i.InitializerServiceImpl - Apply DefaultMetadataInitializer ...
+06:48:58.361 [graviteeio-node] INFO  i.g.r.a.s.i.u.i.DefaultMetadataInitializer - Create default env metadata for ExecutionContext{organizationId='Optional[DEFAULT]', environmentId=Optional[DEFAULT]}
+06:48:58.378 [graviteeio-node] INFO  i.g.n.s.i.InitializerServiceImpl - Apply DocumentationSystemFolderInitializer ...
+06:48:58.379 [graviteeio-node] INFO  i.g.r.a.s.i.u.i.EnvironmentInitializer - Starting DocumentationSystemFolderInitializer for ExecutionContext{organizationId='Optional[DEFAULT]', environmentId=Optional[DEFAULT]}
+06:48:58.382 [graviteeio-node] INFO  i.g.r.a.s.i.u.i.DocumentationSystemFolderInitializer - No system folders found. Add system folders in documentation, for portal and each API.
+06:48:58.400 [graviteeio-node] INFO  i.g.n.s.i.InitializerServiceImpl - Apply IntegrationControllerInitializer ...
+06:48:58.400 [graviteeio-node] INFO  i.g.n.s.i.InitializerServiceImpl - Apply DefaultOrganizationAdminRoleInitializer ...
+06:48:58.402 [graviteeio-node] INFO  i.g.r.a.s.i.u.i.OrganizationInitializer - Starting DefaultOrganizationAdminRoleInitializer for ExecutionContext{organizationId='Optional[DEFAULT]', environmentId=Optional.empty}
+06:48:58.403 [graviteeio-node] INFO  i.g.r.a.service.impl.RoleServiceImpl -       - <ORGANIZATION> ADMIN (system)
+06:48:58.404 [graviteeio-node] INFO  i.g.r.a.service.impl.RoleServiceImpl -       - <ENVIRONMENT> ADMIN (system)
+06:48:58.405 [graviteeio-node] INFO  i.g.r.a.service.impl.RoleServiceImpl -       - <INTEGRATION> PRIMARY_OWNER (system)
+06:48:58.407 [graviteeio-node] INFO  i.g.n.s.i.InitializerServiceImpl - Apply CockpitIdInitializer ...
+06:48:58.410 [graviteeio-node] INFO  i.g.n.s.i.InitializerServiceImpl - Apply DefaultCategoryInitializer ...
+06:48:58.411 [graviteeio-node] INFO  i.g.n.s.i.InitializerServiceImpl - Apply DefaultPageRevisionInitializer ...
+06:48:58.413 [graviteeio-node] INFO  i.g.r.a.s.i.u.i.DefaultPageRevisionInitializer - No page revisions found. Create a default revision based on pages.
+06:48:58.418 [graviteeio-node] INFO  i.g.n.s.i.InitializerServiceImpl - Apply DefaultParameterInitializer ...
+06:48:58.418 [graviteeio-node] INFO  i.g.n.s.i.InitializerServiceImpl - Apply DefaultUserStatusInitializer ...
+06:48:58.419 [graviteeio-node] INFO  i.g.r.a.s.i.u.i.OrganizationInitializer - Starting DefaultUserStatusInitializer for ExecutionContext{organizationId='Optional[DEFAULT]', environmentId=Optional.empty}
+06:48:58.424 [graviteeio-node] INFO  i.g.n.s.i.InitializerServiceImpl - Apply SearchIndexInitializer ...
+06:48:58.427 [graviteeio-node] INFO  i.g.n.s.i.InitializerServiceImpl - Apply DefaultApiHeaderInitializer ...
+06:48:58.428 [graviteeio-node] INFO  i.g.r.a.s.i.u.i.EnvironmentInitializer - Starting DefaultApiHeaderInitializer for ExecutionContext{organizationId='Optional[DEFAULT]', environmentId=Optional[DEFAULT]}
+06:48:58.430 [graviteeio-node] INFO  i.g.r.a.s.i.u.i.DefaultApiHeaderInitializer - Create default API Headers configuration for ExecutionContext{organizationId='Optional[DEFAULT]', environmentId=Optional[DEFAULT]}
+06:48:58.438 [graviteeio-node] INFO  i.g.n.s.i.InitializerServiceImpl - Apply IdentityProviderInitializer ...
+06:48:58.438 [graviteeio-node] INFO  i.g.n.s.i.InitializerServiceImpl - Apply DefaultThemeInitializer ...
+06:48:58.439 [graviteeio-node] INFO  i.g.r.a.s.i.u.i.EnvironmentInitializer - Starting DefaultThemeInitializer for ExecutionContext{organizationId='Optional[DEFAULT]', environmentId=Optional[DEFAULT]}
+06:48:58.442 [graviteeio-node] INFO  i.g.n.s.i.InitializerServiceImpl - Apply IdentityProviderActivationInitializer ...
+06:48:58.445 [graviteeio-node] INFO  i.g.r.a.s.i.u.i.IdentityProviderActivationInitializer -     No activation found. Active all idp on all target by default if enabled.
+06:48:58.449 [graviteeio-node] INFO  i.g.node.container.AbstractNode - Gravitee.io - Rest APIs id[043bef79-ca9f-4c67-bbef-79ca9f4c67b8] version[4.7.6] pid[1] build[1093365#b33db62e676fad748d3ad09e3cbc139394b6da7a] jvm[Eclipse Adoptium/OpenJDK 64-Bit Server VM/21.0.7+6-LTS] started in 3793 ms.
+07:32:51.508 [SimpleAsyncTaskExecutor-3] ERROR i.g.r.a.s.n.i.EmailNotifierServiceImpl - No emails extracted from []
+07:32:51.508 [SimpleAsyncTaskExecutor-2] ERROR i.g.r.a.s.n.i.EmailNotifierServiceImpl - No emails extracted from []
+07:32:55.019 [sync-1] INFO  i.g.r.api.services.sync.ApiManager - Deployment of API id[57463c04-e503-43c9-863c-04e50363c998] name[Dev Guide API] version[1.0]
+07:32:55.022 [sync-1] INFO  i.g.r.a.s.d.DynamicPropertiesService - 57463c04-e503-43c9-863c-04e50363c998 Dynamic properties service is disabled for API: Dev Guide API [1.0]
+09:03:19.895 [gravitee-listener-65] INFO  i.g.r.a.m.r.r.o.CurrentUserResource - User '334186ad-3a71-4023-8186-ad3a7100236d' does not exist.
+09:06:42.397 [gravitee-listener-129] INFO  i.g.r.e.v.a.a.AggregateValueCountByFieldAdapter - Top Hits Query: filtering date range from 1749546443286 to 1749546503286
+09:06:42.411 [gravitee-listener-74] INFO  i.g.r.e.v.a.a.SearchTopFailedApisAdapter - Top Hits Query: filtering date range from 1749546443286 to 1749546503286
+09:06:42.412 [vert.x-eventloop-thread-17] INFO  i.g.r.e.v.a.a.SearchResponseStatusRangesAdapter - Query filtering date range from Tue Jun 10 09:07:23 GMT 2025 to Tue Jun 10 09:08:23 GMT 2025
+09:06:42.415 [gravitee-listener-67] INFO  i.g.r.e.v.a.a.SearchRequestResponseTimeAdapter - Top Hits Query: filtering date range from 1749546443286 to 1749546503286
+09:06:42.469 [vert.x-eventloop-thread-18] ERROR i.g.r.e.v.a.a.SearchRequestResponseTimeAdapter - Aggregation with name min_response_time not found
+09:06:42.471 [vert.x-eventloop-thread-18] ERROR i.g.r.e.v.a.a.SearchRequestResponseTimeAdapter - Aggregation with name max_response_time not found
+09:06:42.471 [vert.x-eventloop-thread-18] ERROR i.g.r.e.v.a.a.SearchRequestResponseTimeAdapter - Aggregation with name avg_response_time not found
+09:06:42.482 [gravitee-listener-75] INFO  i.g.r.e.v.a.a.AggregateValueCountByFieldAdapter - Top Hits Query: filtering date range from 1749546443286 to 1749546503286
+09:09:46.818 [gravitee-listener-71] INFO  i.g.r.e.v.a.a.AggregateValueCountByFieldAdapter - Top Hits Query: filtering date range from 1749546443286 to 1749546503286
+09:09:46.826 [vert.x-eventloop-thread-21] INFO  i.g.r.e.v.a.a.SearchResponseStatusRangesAdapter - Query filtering date range from Tue Jun 10 09:07:23 GMT 2025 to Tue Jun 10 09:08:23 GMT 2025
+09:09:46.833 [gravitee-listener-73] INFO  i.g.r.e.v.a.a.SearchTopFailedApisAdapter - Top Hits Query: filtering date range from 1749546443286 to 1749546503286
+09:09:46.835 [gravitee-listener-96] INFO  i.g.r.e.v.a.a.SearchRequestResponseTimeAdapter - Top Hits Query: filtering date range from 1749546443286 to 1749546503286
+09:09:46.839 [gravitee-listener-74] INFO  i.g.r.e.v.a.a.AggregateValueCountByFieldAdapter - Top Hits Query: filtering date range from 1749546443286 to 1749546503286
+09:09:46.845 [vert.x-eventloop-thread-23] ERROR i.g.r.e.v.a.a.SearchRequestResponseTimeAdapter - Aggregation with name min_response_time not found
+09:09:46.850 [vert.x-eventloop-thread-23] ERROR i.g.r.e.v.a.a.SearchRequestResponseTimeAdapter - Aggregation with name max_response_time not found
+09:09:46.852 [vert.x-eventloop-thread-23] ERROR i.g.r.e.v.a.a.SearchRequestResponseTimeAdapter - Aggregation with name avg_response_time not found
+09:41:46.253 [SimpleAsyncTaskExecutor-4] ERROR i.g.r.a.s.n.i.EmailNotifierServiceImpl - No emails extracted from []
+09:42:27.670 [SimpleAsyncTaskExecutor-5] ERROR i.g.r.a.s.n.i.EmailNotifierServiceImpl - No emails extracted from []
+09:43:09.688 [SimpleAsyncTaskExecutor-6] ERROR i.g.r.a.s.n.i.EmailNotifierServiceImpl - No emails extracted from []
+09:44:20.048 [SimpleAsyncTaskExecutor-7] ERROR i.g.r.a.s.n.i.EmailNotifierServiceImpl - No emails extracted from []
+09:44:30.706 [SimpleAsyncTaskExecutor-8] ERROR i.g.r.a.s.n.i.EmailNotifierServiceImpl - No emails extracted from []
+11:16:26.596 [SimpleAsyncTaskExecutor-9] ERROR i.g.r.a.s.n.i.EmailNotifierServiceImpl - No emails extracted from []
+11:20:18.732 [SimpleAsyncTaskExecutor-10] ERROR i.g.r.a.s.n.i.EmailNotifierServiceImpl - No emails extracted from []
+11:20:20.012 [sync-1] INFO  i.g.r.api.services.sync.ApiManager - Deployment of API id[5447c058-7324-4482-87c0-587324348254] name[todos2] version[1.0]

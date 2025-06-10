@@ -1,0 +1,658 @@
+06:48:50.424 [graviteeio-node] [] INFO  i.g.n.c.spring.SpringBasedContainer - Starting Boot phase.
+06:48:50.494 [graviteeio-node] [] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - Loading boot plugin handlers
+06:48:50.496 [graviteeio-node] [] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - Found 1 boot plugin handler(s):
+06:48:50.497 [graviteeio-node] [] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - 	io.gravitee.node.secrets.plugins.internal.SecretProviderPluginHandler
+06:48:50.601 [graviteeio-node] [] INFO  i.g.n.c.s.e.PropertiesConfiguration - Loading Gravitee configuration.
+06:48:50.603 [graviteeio-node] [] INFO  i.g.n.c.s.e.PropertiesConfiguration - 	Gravitee configuration loaded from /opt/graviteeio-gateway/config/gravitee.yml
+06:48:50.632 [graviteeio-node] [] INFO  i.g.n.c.s.e.PropertiesConfiguration - Loading Gravitee configuration. DONE
+06:48:50.884 [graviteeio-node] [] ERROR i.g.k.client.config.KubernetesConfig - Unable to resolve the API Server URL
+06:48:50.884 [graviteeio-node] [] ERROR i.g.k.client.config.KubernetesConfig - Unable to configure Kubernetes Config. No KubeConfig or Service account is found
+06:48:50.901 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.node.license.DefaultLicenseManager
+06:48:50.901 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.node.license.LicenseLoaderService
+06:48:50.901 [graviteeio-node] [] INFO  i.g.n.license.DefaultLicenseFetcher - No license file found. Some plugins may be disabled
+06:48:50.913 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.plugin.core.internal.BootPluginEventListener
+06:48:50.941 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugins from /opt/graviteeio-gateway/plugins
+06:48:51.839 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available api-service: 
+06:48:51.840 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> consul-service-discovery [4.7.6] has been loaded
+06:48:51.841 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> http-health-check [4.7.6] has been loaded
+06:48:51.841 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available entrypoint-connector: 
+06:48:51.841 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> http-proxy [4.7.6] has been loaded
+06:48:51.841 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> tcp-proxy [4.7.6] has been loaded
+06:48:51.841 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> webhook [4.0.2] has been loaded
+06:48:51.841 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> http-get [2.1.0] has been loaded
+06:48:51.841 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> http-post [2.1.0] has been loaded
+06:48:51.841 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> websocket [2.0.0] has been loaded
+06:48:51.841 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> sse [5.0.0] has been loaded
+06:48:51.841 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available service: 
+06:48:51.841 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> gateway-debug [4.7.6] has been loaded
+06:48:51.841 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> sync [4.7.6] has been loaded
+06:48:51.841 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> healthcheck [4.7.6] has been loaded
+06:48:51.841 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> service-endpoint-discovery [4.7.6] has been loaded
+06:48:51.841 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> heartbeat [4.7.6] has been loaded
+06:48:51.841 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> service-bridge-http-server [6.0.0] has been loaded
+06:48:51.841 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> gravitee-service-secrets [1.0.0] has been loaded
+06:48:51.841 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> ratelimitasync [2.1.3] has been loaded
+06:48:51.841 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available endpoint-connector: 
+06:48:51.841 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> http-proxy [4.7.6] has been loaded
+06:48:51.841 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> tcp-proxy [4.7.6] has been loaded
+06:48:51.841 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> mock [4.7.6] has been loaded
+06:48:51.842 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> rabbitmq [3.0.1] has been loaded
+06:48:51.842 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> mqtt5 [4.0.1] has been loaded
+06:48:51.842 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> kafka [4.0.2] has been loaded
+06:48:51.842 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> asb [1.0.1] has been loaded
+06:48:51.842 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available repository: 
+06:48:51.842 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> repository-mongodb [4.7.6] has been loaded
+06:48:51.842 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> repository-jdbc [4.7.6] has been loaded
+06:48:51.842 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> repository-redis [4.7.6] has been loaded
+06:48:51.842 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> repository-noop [4.7.6] has been loaded
+06:48:51.842 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> repository-bridge-http-client [6.0.0] has been loaded
+06:48:51.842 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available reactor: 
+06:48:51.842 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> native-kafka-reactor [2.2.3] has been loaded
+06:48:51.842 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> message-reactor [6.0.2] has been loaded
+06:48:51.842 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available connector: 
+06:48:51.842 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> connector-http [5.0.5] has been loaded
+06:48:51.842 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available policy: 
+06:48:51.842 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> xslt [3.1.1] has been loaded
+06:48:51.842 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> policy-http-callout [4.0.2] has been loaded
+06:48:51.842 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> api-key [5.1.0] has been loaded
+06:48:51.842 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> kafka-acl [1.7.4] has been loaded
+06:48:51.842 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> retry [3.0.0] has been loaded
+06:48:51.842 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> transform-headers [4.0.0] has been loaded
+06:48:51.842 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> ip-filtering [1.19.0] has been loaded
+06:48:51.842 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> jwt [6.1.2] has been loaded
+06:48:51.842 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> json-validation [2.0.3] has been loaded
+06:48:51.842 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> mock [1.14.1] has been loaded
+06:48:51.842 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> regex-threat-protection [1.6.0] has been loaded
+06:48:51.842 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> kafka-topic-mapping [1.2.0] has been loaded
+06:48:51.842 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> jws [2.0.0] has been loaded
+06:48:51.842 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> traffic-shadowing [3.0.0] has been loaded
+06:48:51.842 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> kafka-quota [1.0.2] has been loaded
+06:48:51.842 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> groovy [3.0.1] has been loaded
+06:48:51.842 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> status-code [1.0.2] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> oauth2 [4.0.0] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> key-less [4.0.0] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> cache [2.0.7] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> data-cache [1.0.5] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> spike-arrest [2.1.3] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> quota [2.1.3] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> rate-limit [2.1.3] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> policy-generate-jwt [1.8.0] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> policy-data-logging-masking [3.1.1] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> policy-assign-attributes [2.0.3] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> mtls [1.0.0] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> message-filtering [1.1.4] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> oas-validation [1.0.0] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> cloud-events [1.1.0] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> policy-override-request-method [2.2.1] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> ssl-enforcement [1.5.0] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> xml-threat-protection [1.5.1] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> policy-request-validation [1.15.1] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> html-json [1.6.3] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> rbac [1.4.0] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> xml-validation [1.2.0] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> json-threat-protection [1.4.0] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> url-rewriting [1.7.0] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> policy-openid-userinfo [1.7.0] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> transform-queryparams [1.9.0] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> resource-filtering [1.10.0] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> http-signature [1.7.0] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> generate-http-signature [1.3.0] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> dynamic-routing [1.13.0] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> json-xml [3.0.3] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> policy-assign-metrics [3.1.0] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> rest-to-soap [1.14.1] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> request-content-limit [1.8.1] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> json-to-json [3.0.1] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> metrics-reporter [2.0.1] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> latency [2.0.1] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> xml-json [2.0.1] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> policy-assign-content [2.0.1] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available cluster: 
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> cluster-standalone [7.5.0] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available cache: 
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> cache-standalone [7.5.0] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available secret-provider: 
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> vault [2.1.0] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> kubernetes [2.0.0] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available reporter: 
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> elastic [5.5.2] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> file [3.2.3] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> reporter-cloud [1.1.0] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> reporter-tcp [2.3.2] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available resource: 
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> oauth2 [4.0.2] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> cache [3.0.0] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> oauth2-am-resource [3.0.0] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> content-provider-inline-resource [1.1.1] has been loaded
+06:48:51.843 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available tracer: 
+06:48:51.844 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> jaeger-tracer [3.0.1] has been loaded
+06:48:51.844 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available alert: 
+06:48:51.844 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> alert-engine-connector-ws [2.1.0] has been loaded
+06:48:51.844 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available service_discovery: 
+06:48:51.844 [gio.core-plugin-0] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> consul-service-discovery [1.3.0] has been loaded
+06:48:51.851 [graviteeio-node] [] INFO  i.g.p.c.i.BootPluginEventListener - All boot plugins have been loaded. Installing...
+06:48:51.853 [graviteeio-node] [] INFO  i.g.n.s.p.i.SecretProviderPluginHandler - Install plugin: vault [com.graviteesource.secretprovider.hcvault.HCVaultSecretProviderFactory]
+06:48:51.894 [graviteeio-node] [] WARN  i.g.n.s.p.i.SecretProviderPluginHandler - Plugin 'vault' detected but not activated.
+06:48:51.894 [graviteeio-node] [] INFO  i.g.n.s.p.i.SecretProviderPluginHandler - Install plugin: kubernetes [io.gravitee.secretprovider.kubernetes.KubernetesSecretProviderFactory]
+06:48:51.899 [graviteeio-node] [] INFO  i.g.n.s.p.i.SecretProviderPluginHandler - Plugin 'kubernetes' installed.
+06:48:51.899 [graviteeio-node] [] INFO  i.g.n.c.spring.SpringBasedContainer - Boot phase done. Initializing context.
+06:48:51.909 [graviteeio-node] [] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - Loading plugin handlers
+06:48:51.918 [graviteeio-node] [] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - Found 14 plugin handler(s):
+06:48:51.918 [graviteeio-node] [] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - 	io.gravitee.plugin.entrypoint.internal.EntrypointConnectorPluginHandler
+06:48:51.918 [graviteeio-node] [] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - 	io.gravitee.plugin.repository.internal.RepositoryPluginHandler
+06:48:51.918 [graviteeio-node] [] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - 	io.gravitee.plugin.connector.internal.ConnectorPluginHandler
+06:48:51.918 [graviteeio-node] [] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - 	io.gravitee.node.cluster.plugin.ClusterPluginHandler
+06:48:51.918 [graviteeio-node] [] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - 	io.gravitee.plugin.endpoint.internal.EndpointConnectorPluginHandler
+06:48:51.918 [graviteeio-node] [] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - 	io.gravitee.node.reporter.plugin.ReporterPluginHandler
+06:48:51.918 [graviteeio-node] [] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - 	io.gravitee.plugin.alert.internal.AlertPluginHandler
+06:48:51.918 [graviteeio-node] [] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - 	io.gravitee.plugin.resource.internal.ResourcePluginHandler
+06:48:51.919 [graviteeio-node] [] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - 	io.gravitee.apim.plugin.reactor.internal.ReactorPluginHandler
+06:48:51.919 [graviteeio-node] [] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - 	io.gravitee.plugin.policy.internal.PolicyPluginHandler
+06:48:51.919 [graviteeio-node] [] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - 	io.gravitee.node.cache.plugin.CachePluginHandler
+06:48:51.919 [graviteeio-node] [] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - 	io.gravitee.node.plugins.service.handler.ServicePluginHandler
+06:48:51.919 [graviteeio-node] [] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - 	io.gravitee.plugin.apiservice.internal.ApiServicePluginHandler
+06:48:51.919 [graviteeio-node] [] INFO  i.g.p.c.s.AbstractPluginHandlerBeanRegistryPostProcessor - 	io.gravitee.plugin.discovery.internal.ServiceDiscoveryPluginHandler
+06:48:52.209 [graviteeio-node] [] WARN  i.g.gateway.env.RequestConfiguration - Http request timeout cannot be unset. Setting it to default value: 30_000 ms
+06:48:52.342 [graviteeio-node] [] WARN  i.gravitee.common.util.DataEncryptor - 
+06:48:52.342 [graviteeio-node] [] WARN  i.gravitee.common.util.DataEncryptor - ##############################################################
+06:48:52.342 [graviteeio-node] [] WARN  i.gravitee.common.util.DataEncryptor - #                      SECURITY WARNING                      #
+06:48:52.342 [graviteeio-node] [] WARN  i.gravitee.common.util.DataEncryptor - ##############################################################
+06:48:52.342 [graviteeio-node] [] WARN  i.gravitee.common.util.DataEncryptor - 
+06:48:52.342 [graviteeio-node] [] WARN  i.gravitee.common.util.DataEncryptor - You still use the default secret.
+06:48:52.342 [graviteeio-node] [] WARN  i.gravitee.common.util.DataEncryptor - This known secret can be used to access protected information.
+06:48:52.342 [graviteeio-node] [] WARN  i.gravitee.common.util.DataEncryptor - Please customize the 'api.properties.encryption.secret' parameter value, or ask your administrator to do it.
+06:48:52.342 [graviteeio-node] [] WARN  i.gravitee.common.util.DataEncryptor - 
+06:48:52.342 [graviteeio-node] [] WARN  i.gravitee.common.util.DataEncryptor - ##############################################################
+06:48:52.342 [graviteeio-node] [] WARN  i.gravitee.common.util.DataEncryptor - 
+06:48:52.457 [graviteeio-node] [] INFO  i.g.n.c.spring.SpringBasedContainer - Context initialized.
+06:48:52.457 [graviteeio-node] [] INFO  i.g.node.container.AbstractContainer - Starting Gravitee.io - API Gateway...
+06:48:52.457 [graviteeio-node] [] INFO  i.g.node.container.AbstractNode - Gravitee.io - API Gateway is now starting...
+06:48:52.457 [graviteeio-node] [] INFO  i.g.node.container.AbstractNode - 	Starting component: NodeMonitoringReporterService
+06:48:52.466 [graviteeio-node] [] INFO  i.g.node.container.AbstractNode - 	Starting component: ReactorEventListener
+06:48:52.467 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.gateway.reactor.handler.ReactorEventListener
+06:48:52.467 [graviteeio-node] [] INFO  i.g.node.container.AbstractNode - 	Starting component: SpanExporterFactory
+06:48:52.467 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.node.opentelemetry.exporter.SpanExporterFactory
+06:48:52.467 [graviteeio-node] [] INFO  i.g.node.container.AbstractNode - 	Starting component: PluginEventListener
+06:48:52.467 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.plugin.core.internal.PluginEventListener
+06:48:52.467 [graviteeio-node] [] INFO  i.g.node.container.AbstractNode - 	Starting component: PluginRegistry
+06:48:52.467 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.plugin.core.internal.PluginRegistryImpl
+06:48:52.470 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - All plugins have been loaded. Installing...
+06:48:52.475 [graviteeio-node] [] INFO  i.g.n.c.plugin.ClusterPluginHandler - Install plugin: cluster-standalone [io.gravitee.node.plugin.cluster.standalone.StandaloneClusterManager]
+06:48:52.481 [graviteeio-node] [] INFO  i.g.n.c.plugin.ClusterPluginHandler - Cluster manager plugin 'cluster-standalone' installed.
+06:48:52.481 [graviteeio-node] [] INFO  i.g.n.c.plugin.ClusterPluginHandler - Plugin 'cluster-standalone' installed.
+06:48:52.481 [graviteeio-node] [] INFO  i.g.n.c.plugin.CachePluginHandler - Install plugin: cache-standalone [io.gravitee.node.plugin.cache.standalone.StandaloneCacheManager]
+06:48:52.484 [graviteeio-node] [] INFO  i.g.n.c.plugin.CachePluginHandler - Cache manager plugin 'cache-standalone' installed.
+06:48:52.484 [graviteeio-node] [] INFO  i.g.n.c.plugin.CachePluginHandler - Plugin 'cache-standalone' installed.
+06:48:52.484 [graviteeio-node] [] INFO  i.g.p.r.i.RepositoryPluginHandler - Install plugin: repository-mongodb [io.gravitee.repository.mongodb.MongoRepositoryProvider]
+06:48:52.484 [graviteeio-node] [] WARN  i.g.p.r.i.RepositoryTypeReader - The repository of scope MANAGEMENT is loaded from discouraged section 'management.type'. Please use 'repositories.management.type'.
+06:48:52.484 [graviteeio-node] [] INFO  i.g.p.r.i.RepositoryPluginHandler - Loading repository for scope MANAGEMENT: mongodb
+06:48:52.484 [graviteeio-node] [] WARN  i.g.p.r.i.RepositoryTypeReader - The repository of scope RATE_LIMIT is loaded from discouraged section 'ratelimit.type'. Please use 'repositories.ratelimit.type'.
+06:48:52.484 [graviteeio-node] [] INFO  i.g.p.r.i.RepositoryPluginHandler - Loading repository for scope RATE_LIMIT: mongodb
+06:48:52.484 [graviteeio-node] [] INFO  i.g.p.r.i.RepositoryPluginHandler - Loading repository for scope DISTRIBUTED_SYNC: null
+06:48:52.484 [graviteeio-node] [] WARN  i.g.p.r.i.RepositoryPluginHandler - No repository type defined in configuration for distributed-sync
+06:48:52.485 [graviteeio-node] [] INFO  i.g.p.r.i.RepositoryPluginHandler - Register a new repository: repository-mongodb [io.gravitee.repository.mongodb.MongoRepositoryProvider]
+06:48:52.486 [graviteeio-node] [] WARN  i.g.p.r.i.RepositoryTypeReader - The repository of scope MANAGEMENT is loaded from discouraged section 'management.type'. Please use 'repositories.management.type'.
+06:48:52.487 [graviteeio-node] [] INFO  i.g.p.r.i.RepositoryPluginHandler - Repository [MANAGEMENT] loaded by mongodb
+06:48:53.925 [graviteeio-node] [] WARN  i.g.p.r.i.RepositoryTypeReader - The repository of scope RATE_LIMIT is loaded from discouraged section 'ratelimit.type'. Please use 'repositories.ratelimit.type'.
+06:48:53.926 [graviteeio-node] [] INFO  i.g.p.r.i.RepositoryPluginHandler - Repository [RATE_LIMIT] loaded by mongodb
+06:48:54.016 [graviteeio-node] [] INFO  i.g.p.r.i.RepositoryPluginHandler - Plugin 'repository-mongodb' installed.
+06:48:54.016 [graviteeio-node] [] INFO  i.g.p.r.i.RepositoryPluginHandler - Install plugin: repository-redis [io.gravitee.repository.redis.RedisRepositoryProvider]
+06:48:54.018 [graviteeio-node] [] INFO  i.g.p.r.i.RepositoryPluginHandler - Register a new repository: repository-redis [io.gravitee.repository.redis.RedisRepositoryProvider]
+06:48:54.018 [graviteeio-node] [] WARN  i.g.p.r.i.RepositoryTypeReader - The repository of scope RATE_LIMIT is loaded from discouraged section 'ratelimit.type'. Please use 'repositories.ratelimit.type'.
+06:48:54.018 [graviteeio-node] [] INFO  i.g.p.r.i.RepositoryPluginHandler - Plugin 'repository-redis' installed.
+06:48:54.018 [graviteeio-node] [] INFO  i.g.p.r.i.RepositoryPluginHandler - Install plugin: repository-jdbc [io.gravitee.repository.jdbc.JdbcRepositoryProvider]
+06:48:54.019 [graviteeio-node] [] INFO  i.g.p.r.i.RepositoryPluginHandler - Register a new repository: repository-jdbc [io.gravitee.repository.jdbc.JdbcRepositoryProvider]
+06:48:54.019 [graviteeio-node] [] WARN  i.g.p.r.i.RepositoryTypeReader - The repository of scope MANAGEMENT is loaded from discouraged section 'management.type'. Please use 'repositories.management.type'.
+06:48:54.019 [graviteeio-node] [] WARN  i.g.p.r.i.RepositoryTypeReader - The repository of scope RATE_LIMIT is loaded from discouraged section 'ratelimit.type'. Please use 'repositories.ratelimit.type'.
+06:48:54.019 [graviteeio-node] [] INFO  i.g.p.r.i.RepositoryPluginHandler - Plugin 'repository-jdbc' installed.
+06:48:54.020 [graviteeio-node] [] INFO  i.g.p.r.i.RepositoryPluginHandler - Install plugin: repository-bridge-http-client [com.graviteesource.repository.bridge.client.HttpBridgeRepositoryProvider]
+06:48:54.020 [graviteeio-node] [] WARN  i.g.p.r.i.RepositoryPluginHandler - Plugin 'repository-bridge-http-client' detected but not activated.
+06:48:54.020 [graviteeio-node] [] INFO  i.g.p.r.i.RepositoryPluginHandler - Install plugin: repository-noop [io.gravitee.repository.noop.NoOpRepositoryProvider]
+06:48:54.021 [graviteeio-node] [] INFO  i.g.p.r.i.RepositoryPluginHandler - Register a new repository: repository-noop [io.gravitee.repository.noop.NoOpRepositoryProvider]
+06:48:54.021 [graviteeio-node] [] WARN  i.g.p.r.i.RepositoryTypeReader - The repository of scope MANAGEMENT is loaded from discouraged section 'management.type'. Please use 'repositories.management.type'.
+06:48:54.021 [graviteeio-node] [] WARN  i.g.p.r.i.RepositoryTypeReader - The repository of scope RATE_LIMIT is loaded from discouraged section 'ratelimit.type'. Please use 'repositories.ratelimit.type'.
+06:48:54.021 [graviteeio-node] [] INFO  i.g.p.r.i.RepositoryPluginHandler - Plugin 'repository-noop' installed.
+06:48:54.021 [graviteeio-node] [] INFO  i.g.p.a.internal.AlertPluginHandler - Install plugin: alert-engine-connector-ws [io.gravitee.ae.connector.ws.WsConnectorPlugin]
+06:48:54.066 [graviteeio-node] [] INFO  i.g.p.a.internal.AlertPluginHandler - Plugin 'alert-engine-connector-ws' installed.
+06:48:54.066 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: kafka-acl [com.graviteesource.policy.kafka.acl.KafkaAclPolicy]
+06:48:54.081 [graviteeio-node] [] WARN  i.g.p.p.internal.PolicyPluginHandler - Plugin 'kafka-acl' detected but not activated.
+06:48:54.081 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: policy-openid-userinfo [io.gravitee.policy.openid.userinfo.UserInfoPolicy]
+06:48:54.083 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'policy-openid-userinfo' installed.
+06:48:54.083 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: groovy [io.gravitee.policy.groovy.GroovyPolicy]
+06:48:54.087 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'groovy' installed.
+06:48:54.087 [graviteeio-node] [] INFO  i.g.p.e.i.EntrypointConnectorPluginHandler - Install plugin: tcp-proxy [io.gravitee.plugin.entrypoint.tcp.proxy.TcpProxyEntrypointConnectorFactory]
+06:48:54.090 [graviteeio-node] [] INFO  i.g.p.e.i.EntrypointConnectorPluginHandler - Plugin 'tcp-proxy' installed.
+06:48:54.090 [graviteeio-node] [] INFO  i.g.p.e.i.EntrypointConnectorPluginHandler - Install plugin: sse [com.graviteesource.entrypoint.sse.SseEntrypointConnectorFactory]
+06:48:54.094 [graviteeio-node] [] WARN  i.g.p.e.i.EntrypointConnectorPluginHandler - Plugin 'sse' detected but not activated.
+06:48:54.094 [graviteeio-node] [] INFO  i.g.p.e.i.EntrypointConnectorPluginHandler - Install plugin: http-proxy [io.gravitee.plugin.entrypoint.http.proxy.HttpProxyEntrypointConnectorFactory]
+06:48:54.095 [graviteeio-node] [] INFO  i.g.p.e.i.EntrypointConnectorPluginHandler - Plugin 'http-proxy' installed.
+06:48:54.095 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: cache [io.gravitee.policy.cache.CachePolicy]
+06:48:54.097 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'cache' installed.
+06:48:54.097 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: rest-to-soap [io.gravitee.policy.rest2soap.RestToSoapTransformerPolicy]
+06:48:54.098 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'rest-to-soap' installed.
+06:48:54.098 [graviteeio-node] [] INFO  i.g.p.r.i.ResourcePluginHandler - Install plugin: oauth2-am-resource [io.gravitee.resource.oauth2.am.OAuth2AMResource]
+06:48:54.099 [graviteeio-node] [] INFO  i.g.p.r.i.ResourcePluginHandler - Plugin 'oauth2-am-resource' installed.
+06:48:54.100 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: mtls [io.gravitee.policy.mtls.MtlsPolicy]
+06:48:54.101 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'mtls' installed.
+06:48:54.101 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: regex-threat-protection [io.gravitee.policy.threatprotection.regex.RegexThreatProtectionPolicy]
+06:48:54.103 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'regex-threat-protection' installed.
+06:48:54.103 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: xml-threat-protection [io.gravitee.policy.threatprotection.xml.XmlThreatProtectionPolicy]
+06:48:54.104 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'xml-threat-protection' installed.
+06:48:54.104 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: retry [io.gravitee.policy.retry.RetryPolicy]
+06:48:54.105 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'retry' installed.
+06:48:54.105 [graviteeio-node] [] INFO  i.g.p.e.i.EndpointConnectorPluginHandler - Install plugin: mock [io.gravitee.plugin.endpoint.mock.MockEndpointConnectorFactory]
+06:48:54.107 [graviteeio-node] [] INFO  i.g.p.e.i.EndpointConnectorPluginHandler - Plugin 'mock' installed.
+06:48:54.107 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: status-code [io.gravitee.policy.status.code.StatusCodePolicy]
+06:48:54.108 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'status-code' installed.
+06:48:54.108 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: kafka-quota [com.graviteesource.policy.kafka.quota.KafkaQuotaPolicy]
+06:48:54.111 [graviteeio-node] [] WARN  i.g.p.p.internal.PolicyPluginHandler - Plugin 'kafka-quota' detected but not activated.
+06:48:54.111 [graviteeio-node] [] INFO  i.g.n.r.plugin.ReporterPluginHandler - Install plugin: elastic [io.gravitee.reporter.elasticsearch.ElasticsearchReporter]
+06:48:54.199 [graviteeio-node] [] INFO  i.g.n.r.plugin.ReporterPluginHandler - Plugin 'elastic' installed.
+06:48:54.199 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Install plugin: service-bridge-http-server [com.graviteesource.repository.bridge.server.BridgeService]
+06:48:54.200 [graviteeio-node] [] WARN  i.g.n.p.s.h.ServicePluginHandler - Plugin 'service-bridge-http-server' detected but not activated.
+06:48:54.200 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Install plugin: heartbeat [io.gravitee.gateway.services.heartbeat.HeartbeatService]
+06:48:54.207 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Plugin 'heartbeat' installed.
+06:48:54.207 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: policy-override-request-method [io.gravitee.policy.overriderequestmethod.OverrideRequestMethodPolicy]
+06:48:54.208 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'policy-override-request-method' installed.
+06:48:54.208 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: mock [io.gravitee.policy.mock.MockPolicy]
+06:48:54.214 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'mock' installed.
+06:48:54.214 [graviteeio-node] [] INFO  i.g.p.e.i.EndpointConnectorPluginHandler - Install plugin: kafka [com.graviteesource.endpoint.kafka.KafkaEndpointConnectorFactory]
+06:48:54.218 [graviteeio-node] [] WARN  i.g.p.e.i.EndpointConnectorPluginHandler - Plugin 'kafka' detected but not activated.
+06:48:54.218 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: xml-json [io.gravitee.policy.xml2json.XmlToJsonTransformationPolicy]
+06:48:54.221 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'xml-json' installed.
+06:48:54.221 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: json-to-json [io.gravitee.policy.json2json.JsonToJsonTransformationPolicy]
+06:48:54.222 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'json-to-json' installed.
+06:48:54.222 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Install plugin: gateway-debug [io.gravitee.gateway.debug.DebugService]
+06:48:54.275 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Plugin 'gateway-debug' installed.
+06:48:54.275 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: ssl-enforcement [io.gravitee.policy.sslenforcement.SslEnforcementPolicy]
+06:48:54.276 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'ssl-enforcement' installed.
+06:48:54.276 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: policy-assign-content [io.gravitee.policy.assigncontent.AssignContentPolicy]
+06:48:54.278 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'policy-assign-content' installed.
+06:48:54.278 [graviteeio-node] [] INFO  i.g.p.e.i.EndpointConnectorPluginHandler - Install plugin: asb [io.gravitee.endpoint.azure.servicebus.AzureServiceBusEndpointConnectorFactory]
+06:48:54.287 [graviteeio-node] [] WARN  i.g.p.e.i.EndpointConnectorPluginHandler - Plugin 'asb' detected but not activated.
+06:48:54.287 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: key-less [io.gravitee.policy.keyless.KeylessPolicy]
+06:48:54.288 [graviteeio-node] [] INFO  i.g.p.p.i.PolicyConfigurationClassFinder - No policy configuration class defined for policy io.gravitee.policy.keyless.KeylessPolicy
+06:48:54.288 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'key-less' installed.
+06:48:54.288 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: policy-assign-attributes [io.gravitee.policy.assignattributes.AssignAttributesPolicy]
+06:48:54.289 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'policy-assign-attributes' installed.
+06:48:54.289 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: quota [io.gravitee.policy.quota.QuotaPolicy]
+06:48:54.292 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'quota' installed.
+06:48:54.293 [graviteeio-node] [] INFO  i.g.p.r.i.ResourcePluginHandler - Install plugin: oauth2 [io.gravitee.resource.oauth2.generic.OAuth2GenericResource]
+06:48:54.294 [graviteeio-node] [] INFO  i.g.p.r.i.ResourcePluginHandler - Plugin 'oauth2' installed.
+06:48:54.294 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: metrics-reporter [io.gravitee.policy.metricsreporter.MetricsReporterPolicy]
+06:48:54.301 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'metrics-reporter' installed.
+06:48:54.301 [graviteeio-node] [] INFO  i.g.p.e.i.EntrypointConnectorPluginHandler - Install plugin: websocket [com.graviteesource.entrypoint.websocket.WebSocketEntrypointConnectorFactory]
+06:48:54.307 [graviteeio-node] [] WARN  i.g.p.e.i.EntrypointConnectorPluginHandler - Plugin 'websocket' detected but not activated.
+06:48:54.307 [graviteeio-node] [] INFO  i.g.a.p.r.i.ReactorPluginHandler - Install plugin: message-reactor [com.graviteesource.reactor.message.MessageApiReactorFactory]
+06:48:54.344 [graviteeio-node] [] WARN  i.g.a.p.r.i.ReactorPluginHandler - Plugin 'message-reactor' detected but not activated.
+06:48:54.344 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: request-content-limit [io.gravitee.policy.rcl.RequestContentLimitPolicy]
+06:48:54.346 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'request-content-limit' installed.
+06:48:54.346 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: oauth2 [io.gravitee.policy.oauth2.Oauth2Policy]
+06:48:54.347 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'oauth2' installed.
+06:48:54.348 [graviteeio-node] [] INFO  i.g.p.e.i.EndpointConnectorPluginHandler - Install plugin: rabbitmq [com.graviteesource.endpoint.rabbitmq.RabbitMQEndpointConnectorFactory]
+06:48:54.350 [graviteeio-node] [] WARN  i.g.p.e.i.EndpointConnectorPluginHandler - Plugin 'rabbitmq' detected but not activated.
+06:48:54.350 [graviteeio-node] [] INFO  i.g.p.d.i.ServiceDiscoveryPluginHandler - Install plugin: consul-service-discovery [io.gravitee.discovery.consul.ConsulServiceDiscovery]
+06:48:54.351 [graviteeio-node] [] INFO  i.g.p.d.i.ServiceDiscoveryPluginHandler - Plugin 'consul-service-discovery' installed.
+06:48:54.351 [graviteeio-node] [] INFO  i.g.p.e.i.EndpointConnectorPluginHandler - Install plugin: mqtt5 [com.graviteesource.endpoint.mqtt5.Mqtt5EndpointConnectorFactory]
+06:48:54.353 [graviteeio-node] [] WARN  i.g.p.e.i.EndpointConnectorPluginHandler - Plugin 'mqtt5' detected but not activated.
+06:48:54.353 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: traffic-shadowing [io.gravitee.policy.trafficshadowing.TrafficShadowingPolicy]
+06:48:54.354 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'traffic-shadowing' installed.
+06:48:54.354 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: xml-validation [io.gravitee.policy.xmlvalidation.XmlValidationPolicy]
+06:48:54.356 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'xml-validation' installed.
+06:48:54.356 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Install plugin: service-endpoint-discovery [io.gravitee.gateway.services.endpoint.discovery.EndpointDiscoveryService]
+06:48:54.366 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Plugin 'service-endpoint-discovery' installed.
+06:48:54.367 [graviteeio-node] [] INFO  i.g.p.r.i.ResourcePluginHandler - Install plugin: content-provider-inline-resource [io.gravitee.resource.content_provider.inline.ContentProviderInlineResource]
+06:48:54.368 [graviteeio-node] [] INFO  i.g.p.r.i.ResourcePluginHandler - Plugin 'content-provider-inline-resource' installed.
+06:48:54.368 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Install plugin: ratelimitasync [io.gravitee.gateway.services.ratelimit.AsyncRateLimitService]
+06:48:54.373 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Plugin 'ratelimitasync' installed.
+06:48:54.373 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: json-threat-protection [io.gravitee.policy.threatprotection.json.JsonThreatProtectionPolicy]
+06:48:54.375 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'json-threat-protection' installed.
+06:48:54.376 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: message-filtering [io.gravitee.policy.messagefiltering.MessageFilteringPolicy]
+06:48:54.378 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'message-filtering' installed.
+06:48:54.378 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: cloud-events [com.graviteesource.policy.cloudevents.CloudEventsTransformationPolicy]
+06:48:54.380 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'cloud-events' installed.
+06:48:54.381 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: latency [io.gravitee.policy.latency.LatencyPolicy]
+06:48:54.382 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'latency' installed.
+06:48:54.382 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Install plugin: sync [io.gravitee.gateway.services.sync.SyncService]
+06:48:54.442 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Plugin 'sync' installed.
+06:48:54.442 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: data-cache [com.graviteesource.policy.data.cache.DataCachePolicy]
+06:48:54.444 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'data-cache' installed.
+06:48:54.444 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: policy-assign-metrics [com.graviteesource.policy.assignmetrics.AssignMetricsPolicy]
+06:48:54.445 [graviteeio-node] [] WARN  i.g.p.p.internal.PolicyPluginHandler - Plugin 'policy-assign-metrics' detected but not activated.
+06:48:54.446 [graviteeio-node] [] INFO  i.g.p.e.i.EntrypointConnectorPluginHandler - Install plugin: webhook [com.graviteesource.entrypoint.webhook.WebhookEntrypointConnectorFactory]
+06:48:54.449 [graviteeio-node] [] WARN  i.g.p.e.i.EntrypointConnectorPluginHandler - Plugin 'webhook' detected but not activated.
+06:48:54.449 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: jws [io.gravitee.policy.jws.JWSPolicy]
+06:48:54.451 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'jws' installed.
+06:48:54.451 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: html-json [io.gravitee.policy.html2Json.HTMLToJSONTransformationPolicy]
+06:48:54.452 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'html-json' installed.
+06:48:54.452 [graviteeio-node] [] INFO  i.g.n.r.plugin.ReporterPluginHandler - Install plugin: reporter-cloud [com.graviteesource.reporter.cloud.CloudReporter]
+06:48:54.459 [graviteeio-node] [] WARN  c.g.r.c.s.CloudPluginConfiguration - You are using the default 'reporters.cloud.maxMemorySize' (25MB). Consider increase this value in case of too frequent 'Dropping bulk of reports' events.
+06:48:54.462 [graviteeio-node] [] INFO  i.g.n.r.plugin.ReporterPluginHandler - Plugin 'reporter-cloud' installed.
+06:48:54.462 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: transform-queryparams [io.gravitee.policy.transformqueryparams.TransformQueryParametersPolicy]
+06:48:54.463 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'transform-queryparams' installed.
+06:48:54.463 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: dynamic-routing [io.gravitee.policy.dynamicrouting.DynamicRoutingPolicy]
+06:48:54.464 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'dynamic-routing' installed.
+06:48:54.464 [graviteeio-node] [] INFO  i.g.p.e.i.EntrypointConnectorPluginHandler - Install plugin: http-post [com.graviteesource.entrypoint.http.post.HttpPostEntrypointConnectorFactory]
+06:48:54.465 [graviteeio-node] [] WARN  i.g.p.e.i.EntrypointConnectorPluginHandler - Plugin 'http-post' detected but not activated.
+06:48:54.465 [graviteeio-node] [] INFO  i.g.a.p.r.i.ReactorPluginHandler - Install plugin: native-kafka-reactor [com.graviteesource.reactor.nativekafka.KafkaApiReactorFactory]
+06:48:54.482 [graviteeio-node] [] WARN  i.g.a.p.r.i.ReactorPluginHandler - Plugin 'native-kafka-reactor' detected but not activated.
+06:48:54.482 [graviteeio-node] [] INFO  i.g.n.r.plugin.ReporterPluginHandler - Installation skipped for: file [io.gravitee.reporter.file.FileReporter]
+06:48:54.482 [graviteeio-node] [] INFO  i.g.p.e.i.EndpointConnectorPluginHandler - Install plugin: http-proxy [io.gravitee.plugin.endpoint.http.proxy.HttpProxyEndpointConnectorFactory]
+06:48:54.484 [graviteeio-node] [] INFO  i.g.p.e.i.EndpointConnectorPluginHandler - Plugin 'http-proxy' installed.
+06:48:54.484 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: rbac [io.gravitee.policy.rbac.RoleBasedAccessControlPolicy]
+06:48:54.497 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'rbac' installed.
+06:48:54.497 [graviteeio-node] [] INFO  i.g.p.a.i.ApiServicePluginHandler - Install plugin: http-health-check [io.gravitee.apim.plugin.apiservice.healthcheck.http.HttpHealthCheckServiceFactory]
+06:48:54.499 [graviteeio-node] [] INFO  i.g.p.a.i.ApiServicePluginHandler - Plugin 'http-health-check' installed.
+06:48:54.499 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: resource-filtering [io.gravitee.policy.resourcefiltering.ResourceFilteringPolicy]
+06:48:54.500 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'resource-filtering' installed.
+06:48:54.500 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: policy-request-validation [io.gravitee.policy.requestvalidation.RequestValidationPolicy]
+06:48:54.502 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'policy-request-validation' installed.
+06:48:54.502 [graviteeio-node] [] INFO  i.g.p.e.i.EndpointConnectorPluginHandler - Install plugin: tcp-proxy [io.gravitee.plugin.endpoint.tcp.proxy.TcpProxyEndpointConnectorFactory]
+06:48:54.504 [graviteeio-node] [] INFO  i.g.p.e.i.EndpointConnectorPluginHandler - Plugin 'tcp-proxy' installed.
+06:48:54.504 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Install plugin: healthcheck [io.gravitee.gateway.services.healthcheck.EndpointHealthcheckService]
+06:48:54.514 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Plugin 'healthcheck' installed.
+06:48:54.514 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: http-signature [io.gravitee.policy.httpsignature.HttpSignaturePolicy]
+06:48:54.516 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'http-signature' installed.
+06:48:54.516 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: policy-data-logging-masking [com.graviteesource.policy.dataloggingmasking.DataLoggingMaskingPolicy]
+06:48:54.519 [graviteeio-node] [] WARN  i.g.p.p.internal.PolicyPluginHandler - Plugin 'policy-data-logging-masking' detected but not activated.
+06:48:54.519 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: api-key [io.gravitee.policy.apikey.ApiKeyPolicy]
+06:48:54.521 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'api-key' installed.
+06:48:54.521 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: jwt [io.gravitee.policy.jwt.JWTPolicy]
+06:48:54.525 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'jwt' installed.
+06:48:54.525 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: rate-limit [io.gravitee.policy.ratelimit.RateLimitPolicy]
+06:48:54.529 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'rate-limit' installed.
+06:48:54.529 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: policy-generate-jwt [io.gravitee.policy.generatejwt.GenerateJwtPolicy]
+06:48:54.535 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'policy-generate-jwt' installed.
+06:48:54.535 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: spike-arrest [io.gravitee.policy.spike.SpikeArrestPolicy]
+06:48:54.537 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'spike-arrest' installed.
+06:48:54.537 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: url-rewriting [io.gravitee.policy.urlrewriting.URLRewritingPolicy]
+06:48:54.538 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'url-rewriting' installed.
+06:48:54.538 [graviteeio-node] [] INFO  i.g.p.e.i.EntrypointConnectorPluginHandler - Install plugin: http-get [com.graviteesource.entrypoint.http.get.HttpGetEntrypointConnectorFactory]
+06:48:54.542 [graviteeio-node] [] WARN  i.g.p.e.i.EntrypointConnectorPluginHandler - Plugin 'http-get' detected but not activated.
+06:48:54.543 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: oas-validation [com.graviteesource.policy.oasvalidation.OASValidationPolicy]
+06:48:54.558 [graviteeio-node] [] WARN  i.g.p.p.internal.PolicyPluginHandler - Plugin 'oas-validation' detected but not activated.
+06:48:54.559 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: ip-filtering [io.gravitee.policy.ipfiltering.IPFilteringPolicy]
+06:48:54.564 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'ip-filtering' installed.
+06:48:54.565 [graviteeio-node] [] INFO  i.g.p.a.i.ApiServicePluginHandler - Install plugin: consul-service-discovery [io.gravitee.apim.plugin.apiservice.servicediscovery.consul.ConsulServiceDiscoveryServiceFactory]
+06:48:54.566 [graviteeio-node] [] INFO  i.g.p.a.i.ApiServicePluginHandler - Plugin 'consul-service-discovery' installed.
+06:48:54.566 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: json-validation [io.gravitee.policy.jsonvalidation.JsonValidationPolicy]
+06:48:54.568 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'json-validation' installed.
+06:48:54.568 [graviteeio-node] [] INFO  i.g.p.c.i.ConnectorPluginHandler - Install plugin: connector-http [io.gravitee.connector.http.HttpConnectorFactory]
+06:48:54.573 [graviteeio-node] [] INFO  i.g.p.c.i.ConnectorConfigurationClassFinder - No connector configuration class defined for connector io.gravitee.connector.http.HttpConnectorFactory
+06:48:54.574 [graviteeio-node] [] INFO  i.g.p.c.i.ConnectorPluginHandler - Plugin 'connector-http' installed.
+06:48:54.574 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: json-xml [io.gravitee.policy.json2xml.JsonToXmlTransformationPolicy]
+06:48:54.578 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'json-xml' installed.
+06:48:54.586 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: transform-headers [io.gravitee.policy.transformheaders.TransformHeadersPolicy]
+06:48:54.588 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'transform-headers' installed.
+06:48:54.588 [graviteeio-node] [] INFO  i.g.p.r.i.ResourcePluginHandler - Install plugin: cache [io.gravitee.resource.cache.NodeCacheResource]
+06:48:54.589 [graviteeio-node] [] INFO  i.g.p.r.i.ResourcePluginHandler - Plugin 'cache' installed.
+06:48:54.589 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: xslt [com.graviteesource.policy.xslt.XSLTTransformationPolicy]
+06:48:54.591 [graviteeio-node] [] WARN  i.g.p.p.internal.PolicyPluginHandler - Plugin 'xslt' detected but not activated.
+06:48:54.591 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: generate-http-signature [io.gravitee.policy.generatehttpsignature.GenerateHttpSignaturePolicy]
+06:48:54.592 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'generate-http-signature' installed.
+06:48:54.592 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Install plugin: gravitee-service-secrets [com.graviteesource.service.secrets.SecretsService]
+06:48:54.592 [graviteeio-node] [] WARN  i.g.n.p.s.h.ServicePluginHandler - Plugin 'gravitee-service-secrets' detected but not activated.
+06:48:54.593 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: kafka-topic-mapping [com.graviteesource.policy.kafka.topic_mapping.KafkaTopicMappingPolicy]
+06:48:54.600 [graviteeio-node] [] WARN  i.g.p.p.internal.PolicyPluginHandler - Plugin 'kafka-topic-mapping' detected but not activated.
+06:48:54.600 [graviteeio-node] [] INFO  i.g.n.r.plugin.ReporterPluginHandler - Install plugin: reporter-tcp [com.graviteesource.reporter.tcp.TcpReporter]
+06:48:54.600 [graviteeio-node] [] WARN  i.g.n.r.plugin.ReporterPluginHandler - Plugin 'reporter-tcp' detected but not activated.
+06:48:54.600 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Install plugin: policy-http-callout [io.gravitee.policy.callout.CalloutHttpPolicy]
+06:48:54.602 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Plugin 'policy-http-callout' installed.
+06:48:54.602 [graviteeio-node] [] INFO  i.g.node.container.AbstractNode - 	Starting component: NodeClusterService
+06:48:54.603 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.node.cluster.NodeClusterService
+06:48:54.604 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.node.plugin.cluster.standalone.StandaloneClusterManager
+06:48:54.604 [graviteeio-node] [] INFO  i.g.node.container.AbstractNode - 	Starting component: NodeCacheService
+06:48:54.605 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.node.cache.NodeCacheService
+06:48:54.605 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.node.plugin.cache.standalone.StandaloneCacheManager
+06:48:54.605 [graviteeio-node] [] INFO  i.g.node.container.AbstractNode - 	Starting component: ServiceManager
+06:48:54.605 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Plugins - Services Manager
+06:48:54.609 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Endpoints Discovery
+06:48:54.613 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Health-check service
+06:48:54.639 [graviteeio-node] [] INFO  i.g.g.s.h.i.HeartbeatEventScheduler - Starting gateway heartbeat
+06:48:54.640 [graviteeio-node] [] INFO  i.g.g.s.h.i.HeartbeatEventScheduler - Monitoring scheduled with fixed delay 5000 MILLISECONDS
+06:48:54.640 [graviteeio-node] [] INFO  i.g.g.s.h.i.HeartbeatEventScheduler - Start gateway heartbeat done successfully
+06:48:54.641 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Gateway - Debug service
+06:48:54.641 [graviteeio-node] [] INFO  i.g.gateway.debug.DebugService - Starting component: VertxDebugService
+06:48:54.641 [graviteeio-node] [] INFO  i.g.g.debug.vertx.VertxDebugService - Starting Vertx DEBUG container and deploy only 1 Verticle
+06:48:54.644 [graviteeio-node] [] INFO  i.g.gateway.debug.DebugService - Starting component: DebugReactorEventListener
+06:48:54.644 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.gateway.reactive.debug.DebugReactorEventListener
+06:48:54.644 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service com.graviteesource.reactor.message.subscription.MessageSubscriptionDispatcher
+06:48:54.644 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Asynchronous Rate Limit proxy
+06:48:54.654 [graviteeio-node] [] INFO  i.g.g.s.r.AsyncRateLimitService - Register the rate-limit service bridge for synchronous and asynchronous mode
+06:48:54.669 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Gateway Sync Service
+06:48:54.669 [graviteeio-node] [] INFO  i.g.g.s.s.p.r.DefaultSyncManager - Starting sync manager
+06:48:54.675 [vert.x-eventloop-thread-4] [] INFO  i.g.n.c.AbstractKeyStoreLoaderManager - Register and start new keystore loader for target: server{id: e37ae9c5-141a-4c47-bae9-c5141a9c47bd} of type: NoOpKeyStoreLoader with id: no-op
+06:48:54.676 [vert.x-eventloop-thread-4] [] INFO  i.g.n.c.AbstractKeyStoreLoaderManager - Register and start new keystore loader for target: server{id: e37ae9c5-141a-4c47-bae9-c5141a9c47bd} of type: NoOpKeyStoreLoader with id: no-op
+06:48:54.684 [vert.x-eventloop-thread-4] [] INFO  i.g.g.r.d.v.DebugHttpProtocolVerticle - Starting debug HTTP server...
+06:48:54.694 [graviteeio-node] [] INFO  i.g.node.container.AbstractNode - 	Starting component: ManagementService
+06:48:54.695 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Node Management API service
+06:48:54.696 [graviteeio-node] [] INFO  i.g.node.container.AbstractNode - 	Starting component: NodeMonitoringEventHandler
+06:48:54.697 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.node.monitoring.handler.NodeMonitoringEventHandler
+06:48:54.697 [vert.x-eventloop-thread-5] [] INFO  i.g.n.m.h.v.v.ManagementVerticle - Start HTTP listener for Node Management API
+06:48:54.699 [graviteeio-node] [] INFO  i.g.node.container.AbstractNode - 	Starting component: NodeInfosService
+06:48:54.700 [graviteeio-node] [] INFO  i.g.n.m.infos.NodeInfosService - Starting node infos service
+06:48:54.700 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Node Infos Service
+06:48:54.704 [graviteeio-node] [] INFO  i.g.n.m.infos.NodeInfosService - Start node infos service: DONE
+06:48:54.704 [graviteeio-node] [] INFO  i.g.node.container.AbstractNode - 	Starting component: NodeHealthCheckService
+06:48:54.704 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Node Health-check service
+06:48:54.707 [graviteeio-node] [] INFO  i.g.n.m.h.NodeHealthCheckService - Node health check scheduled with fixed delay 5000 MILLISECONDS 
+06:48:54.707 [graviteeio-node] [] INFO  i.g.node.container.AbstractNode - 	Starting component: NodeMonitorService
+06:48:54.707 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Node Monitor Service
+06:48:54.709 [graviteeio-node] [] INFO  i.g.n.m.monitor.NodeMonitorService - Node monitoring scheduled with fixed delay 5000 MILLISECONDS 
+06:48:54.710 [graviteeio-node] [] INFO  i.g.node.container.AbstractNode - 	Starting component: ReporterManager
+06:48:54.710 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Reporter service
+06:48:54.712 [graviteeio-node] [] INFO  i.g.node.container.AbstractNode - 	Starting component: TracingContext
+06:48:54.712 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.gateway.opentelemetry.TracingContext
+06:48:54.712 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.node.opentelemetry.tracer.noop.NoOpTracer
+06:48:54.712 [graviteeio-node] [] INFO  i.g.node.container.AbstractNode - 	Starting component: VertxEmbeddedContainer
+06:48:54.712 [graviteeio-node] [] INFO  i.g.g.s.vertx.VertxEmbeddedContainer - Starting Vertx container and deploy Gateway HTTP Verticles [12 instance(s)]
+06:48:54.713 [vert.x-eventloop-thread-0] [] INFO  i.g.n.r.vertx.ReporterManagerImpl - Starting reporter: io.gravitee.node.reporter.vertx.eventbus.EventBusReporterWrapper@53f33489
+06:48:54.714 [vert.x-eventloop-thread-0] [] INFO  i.g.n.r.vertx.ReporterManagerImpl - Starting reporter: io.gravitee.node.reporter.vertx.eventbus.EventBusReporterWrapper@3b6dc5b8
+06:48:54.715 [graviteeio-node] [] INFO  i.g.g.s.vertx.VertxEmbeddedContainer - Starting Vertx container and deploy Gateway TCP Verticles [12 instance(s)]
+06:48:54.715 [graviteeio-node] [] INFO  i.g.node.container.AbstractNode - 	Starting component: AlertEventProducerManager
+06:48:54.715 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Alert Engine - Event producer
+06:48:54.716 [gio.sync-fetcher-0] [] INFO  i.g.g.s.s.p.r.s.n.NodeMetadataSynchronizer - Node metadata synchronized in 22ms
+06:48:54.721 [vert.x-eventloop-thread-8] [] INFO  i.g.g.r.s.vertx.HttpProtocolVerticle - Starting HTTP servers...
+06:48:54.721 [vert.x-eventloop-thread-10] [] INFO  i.g.g.r.s.vertx.HttpProtocolVerticle - Starting HTTP servers...
+06:48:54.722 [vert.x-eventloop-thread-8] [] INFO  i.g.n.c.AbstractKeyStoreLoaderManager - Register and start new keystore loader for target: server{id: http} of type: NoOpKeyStoreLoader with id: no-op
+06:48:54.722 [vert.x-eventloop-thread-10] [] INFO  i.g.n.c.AbstractKeyStoreLoaderManager - Register and start new keystore loader for target: server{id: http} of type: NoOpKeyStoreLoader with id: no-op
+06:48:54.723 [vert.x-eventloop-thread-12] [] INFO  i.g.g.r.s.vertx.HttpProtocolVerticle - Starting HTTP servers...
+06:48:54.723 [vert.x-eventloop-thread-11] [] INFO  i.g.g.r.s.vertx.HttpProtocolVerticle - Starting HTTP servers...
+06:48:54.724 [vert.x-eventloop-thread-9] [] INFO  i.g.g.r.s.vertx.HttpProtocolVerticle - Starting HTTP servers...
+06:48:54.724 [graviteeio-node] [] INFO  i.g.ae.connector.ws.WsEventProducer - AlertEngine connector is enabled. Starting connector.
+06:48:54.726 [vert.x-eventloop-thread-13] [] INFO  i.g.g.r.s.vertx.HttpProtocolVerticle - Starting HTTP servers...
+06:48:54.726 [vert.x-eventloop-thread-14] [] INFO  i.g.g.r.s.vertx.HttpProtocolVerticle - Starting HTTP servers...
+06:48:54.726 [vert.x-eventloop-thread-16] [] INFO  i.g.g.r.s.vertx.HttpProtocolVerticle - Starting HTTP servers...
+06:48:54.726 [vert.x-eventloop-thread-15] [] INFO  i.g.g.r.s.vertx.HttpProtocolVerticle - Starting HTTP servers...
+06:48:54.726 [vert.x-eventloop-thread-17] [] INFO  i.g.g.r.s.vertx.HttpProtocolVerticle - Starting HTTP servers...
+06:48:54.727 [vert.x-eventloop-thread-18] [] INFO  i.g.g.r.s.vertx.HttpProtocolVerticle - Starting HTTP servers...
+06:48:54.735 [vert.x-eventloop-thread-7] [] INFO  i.g.g.r.s.vertx.HttpProtocolVerticle - Starting HTTP servers...
+06:48:54.739 [graviteeio-node] [] INFO  i.g.ae.connector.ws.HttpConnector - AlertEngine connector is disabled.
+06:48:54.763 [graviteeio-node] [] INFO  i.g.node.container.AbstractNode - Gravitee.io - API Gateway id[31b3e7f4-12d1-4f07-b3e7-f412d10f0798] version[4.7.6] pid[1] build[1093365#b33db62e676fad748d3ad09e3cbc139394b6da7a] jvm[Eclipse Adoptium/OpenJDK 64-Bit Server VM/21.0.7+6-LTS] started in 2301 ms.
+06:48:54.776 [gio.sync-deployer-0] [] INFO  i.g.g.s.s.p.r.s.l.LicenseSynchronizer - 0 licenses synchronized in 20ms
+06:48:54.807 [gio.sync-deployer-0] [] INFO  i.g.g.s.s.p.r.s.a.AccessPointSynchronizer - 0 access points synchronized in 25ms
+06:48:54.814 [vert.x-eventloop-thread-9] [] INFO  i.g.g.r.s.vertx.HttpProtocolVerticle - HTTP server [http] ready to accept requests on port 8082
+06:48:54.814 [vert.x-eventloop-thread-11] [] INFO  i.g.g.r.s.vertx.HttpProtocolVerticle - HTTP server [http] ready to accept requests on port 8082
+06:48:54.814 [vert.x-eventloop-thread-18] [] INFO  i.g.g.r.s.vertx.HttpProtocolVerticle - HTTP server [http] ready to accept requests on port 8082
+06:48:54.814 [vert.x-eventloop-thread-12] [] INFO  i.g.g.r.s.vertx.HttpProtocolVerticle - HTTP server [http] ready to accept requests on port 8082
+06:48:54.814 [vert.x-eventloop-thread-16] [] INFO  i.g.g.r.s.vertx.HttpProtocolVerticle - HTTP server [http] ready to accept requests on port 8082
+06:48:54.814 [vert.x-eventloop-thread-17] [] INFO  i.g.g.r.s.vertx.HttpProtocolVerticle - HTTP server [http] ready to accept requests on port 8082
+06:48:54.814 [vert.x-eventloop-thread-4] [] INFO  i.g.g.r.d.v.DebugHttpProtocolVerticle - Debug HTTP server [e37ae9c5-141a-4c47-bae9-c5141a9c47bd] ready to accept requests on port 8482
+06:48:54.814 [vert.x-eventloop-thread-15] [] INFO  i.g.g.r.s.vertx.HttpProtocolVerticle - HTTP server [http] ready to accept requests on port 8082
+06:48:54.814 [vert.x-eventloop-thread-8] [] INFO  i.g.g.r.s.vertx.HttpProtocolVerticle - HTTP server [http] ready to accept requests on port 8082
+06:48:54.814 [vert.x-eventloop-thread-10] [] INFO  i.g.g.r.s.vertx.HttpProtocolVerticle - HTTP server [http] ready to accept requests on port 8082
+06:48:54.815 [vert.x-eventloop-thread-14] [] INFO  i.g.g.r.s.vertx.HttpProtocolVerticle - HTTP server [http] ready to accept requests on port 8082
+06:48:54.815 [vert.x-eventloop-thread-13] [] INFO  i.g.g.r.s.vertx.HttpProtocolVerticle - HTTP server [http] ready to accept requests on port 8082
+06:48:54.819 [vert.x-eventloop-thread-5] [] INFO  i.g.n.m.h.v.v.ManagementVerticle - Register a new endpoint for Management API: [GET] /license [io.gravitee.node.license.management.NodeLicenseManagementEndpoint]
+06:48:54.820 [gio.sync-deployer-0] [] INFO  i.g.g.s.s.p.r.s.o.OrganizationSynchronizer - 0 organizations synchronized in 11ms
+06:48:54.820 [vert.x-eventloop-thread-5] [] INFO  i.g.n.m.h.v.v.ManagementVerticle - Register a new endpoint for Management API: [GET] /apis [io.gravitee.gateway.handlers.api.manager.endpoint.ApisManagementEndpoint]
+06:48:54.820 [vert.x-eventloop-thread-5] [] INFO  i.g.n.m.h.v.v.ManagementVerticle - Register a new endpoint for Management API: [GET] /apis/:apiId [io.gravitee.gateway.handlers.api.manager.endpoint.ApiManagementEndpoint]
+06:48:54.821 [vert.x-eventloop-thread-5] [] INFO  i.g.n.m.h.v.v.ManagementVerticle - Register a new endpoint for Management API: [GET] /cluster [io.gravitee.node.cluster.endpoint.ClusterEndpoint]
+06:48:54.821 [vert.x-eventloop-thread-5] [] INFO  i.g.n.m.h.v.v.ManagementVerticle - Register a new endpoint for Management API: [GET] /health [io.gravitee.node.monitoring.healthcheck.NodeHealthCheckManagementEndpoint]
+06:48:54.821 [vert.x-eventloop-thread-5] [] INFO  i.g.n.m.h.v.v.ManagementVerticle - Register a new endpoint for Management API: [GET] /monitor [io.gravitee.node.monitoring.monitor.NodeMonitorManagementEndpoint]
+06:48:54.821 [vert.x-eventloop-thread-5] [] INFO  i.g.n.m.h.v.v.ManagementVerticle - Register a new endpoint for Management API: [GET] / [io.gravitee.node.management.http.node.NodeEndpoint]
+06:48:54.821 [vert.x-eventloop-thread-5] [] INFO  i.g.n.m.h.v.v.ManagementVerticle - Register a new endpoint for Management API: [GET] /configuration [io.gravitee.node.management.http.configuration.ConfigurationEndpoint]
+06:48:54.821 [vert.x-eventloop-thread-5] [] INFO  i.g.n.m.h.v.v.ManagementVerticle - Register a new endpoint for Management API: [POST, GET] /logging [io.gravitee.node.management.http.node.log.LoggingEndpoint]
+06:48:54.821 [vert.x-eventloop-thread-5] [] INFO  i.g.n.m.h.v.v.ManagementVerticle - HTTP listener for Node Management bind to port TCP:18082
+06:48:54.823 [vert.x-worker-thread-0] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.reporter.elasticsearch.ElasticsearchReporter
+06:48:54.823 [vert.x-worker-thread-0] [] INFO  i.g.r.e.ElasticsearchReporter - Starting Elastic reporter engine...
+06:48:54.829 [gio.sync-deployer-0] [] INFO  i.g.g.s.s.p.r.s.d.DictionarySynchronizer - 0 dictionaries synchronized in 8ms
+06:48:54.831 [vert.x-eventloop-thread-7] [] INFO  i.g.g.r.s.vertx.HttpProtocolVerticle - HTTP server [http] ready to accept requests on port 8082
+06:48:54.834 [gio.sync-deployer-0] [] INFO  i.g.g.s.s.p.r.s.s.SharedPolicyGroupSynchronizer - 0 shared policy groups synchronized in 3ms
+06:48:54.840 [gio.sync-deployer-0] [] INFO  i.g.g.s.s.p.r.s.api.ApiSynchronizer - 0 apis synchronized in 3ms
+06:48:54.841 [gio.sync-deployer-0] [] INFO  i.g.g.s.s.p.r.DefaultSyncManager - Sync service has been scheduled with delay [5000 MILLISECONDS]
+06:48:54.869 [vert.x-eventloop-thread-0] [] WARN  i.g.ae.connector.ws.WsEventProducer - An error occurred trying to send events: The connector is not yet ready
+06:48:54.873 [vert.x-eventloop-thread-0] [] ERROR i.g.e.client.http.HttpClient - Unable to get a connection to Elasticsearch: finishConnect(..) failed: Connection refused: elasticsearch/172.21.0.2:9200
+06:48:54.875 [vert.x-eventloop-thread-0] [] ERROR i.g.e.client.http.HttpClient - Unable to get a connection to Elasticsearch: finishConnect(..) failed: Connection refused: elasticsearch/172.21.0.2:9200
+06:48:59.906 [gio.sync-deployer-0] [] INFO  i.g.g.h.s.m.i.SharedPolicyGroupManagerImpl - Shared Policy Group [ai-redirect-to-huggingface] has been deployed
+06:48:59.916 [gio.sync-deployer-0] [] INFO  i.g.g.h.s.m.i.SharedPolicyGroupManagerImpl - Shared Policy Group [ai-prompt-templating-example] has been deployed
+06:48:59.924 [gio.sync-deployer-0] [] INFO  i.g.gateway.policy.impl.PolicyLoader - Activating context for groovy [io.gravitee.policy.groovy.GroovyInitializer]
+06:48:59.944 [gio.sync-deployer-0] [] WARN  i.g.p.groovy.sandbox.SecuredResolver - The Groovy whitelisted declaration [class io.gravitee.am.model.safe.ClientProperties] cannot be loaded. Message is [java.lang.ClassNotFoundException: io.gravitee.am.model.safe.ClientProperties]
+06:48:59.945 [gio.sync-deployer-0] [] WARN  i.g.p.groovy.sandbox.SecuredResolver - The Groovy whitelisted declaration [class io.gravitee.am.model.safe.DomainProperties] cannot be loaded. Message is [java.lang.ClassNotFoundException: io.gravitee.am.model.safe.DomainProperties]
+06:48:59.945 [gio.sync-deployer-0] [] WARN  i.g.p.groovy.sandbox.SecuredResolver - The Groovy whitelisted declaration [class io.gravitee.am.model.safe.UserProperties] cannot be loaded. Message is [java.lang.ClassNotFoundException: io.gravitee.am.model.safe.UserProperties]
+06:48:59.945 [gio.sync-deployer-0] [] WARN  i.g.p.groovy.sandbox.SecuredResolver - The Groovy whitelisted declaration [class io.gravitee.am.model.uma.PermissionRequest] cannot be loaded. Message is [java.lang.ClassNotFoundException: io.gravitee.am.model.uma.PermissionRequest]
+06:49:00.088 [vert.x-eventloop-thread-0] [] INFO  i.g.r.e.ElasticsearchReporter - Starting Elastic reporter engine... DONE
+06:49:00.088 [vert.x-eventloop-thread-0] [] INFO  i.g.r.e.ElasticsearchReporter - Index mapping template successfully defined
+06:49:00.187 [gio.sync-deployer-0] [] INFO  i.g.g.h.s.m.i.SharedPolicyGroupManagerImpl - Shared Policy Group [ai-rate-limit-and-request-token-limit] has been deployed
+07:32:54.652 [gio.sync-deployer-0] [57463c04-e503-43c9-863c-04e50363c998] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.gateway.opentelemetry.TracingContext
+07:32:54.652 [gio.sync-deployer-0] [57463c04-e503-43c9-863c-04e50363c998] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.node.opentelemetry.tracer.noop.NoOpTracer
+07:32:54.656 [gio.sync-deployer-0] [57463c04-e503-43c9-863c-04e50363c998] INFO  i.g.g.h.a.m.impl.ApiManagerImpl - API id[57463c04-e503-43c9-863c-04e50363c998] name[Dev Guide API] version[1.0] has been deployed
+10:08:03.385 [vert.x-worker-thread-18] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:08:08.392 [vert.x-worker-thread-0] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:08:13.407 [vert.x-worker-thread-3] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:08:18.415 [vert.x-worker-thread-6] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:08:23.425 [vert.x-worker-thread-8] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:08:28.433 [vert.x-worker-thread-11] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:08:33.449 [vert.x-worker-thread-14] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:08:38.463 [vert.x-worker-thread-16] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:08:43.472 [vert.x-worker-thread-19] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:08:48.483 [vert.x-worker-thread-2] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:08:53.490 [vert.x-worker-thread-4] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:08:58.497 [vert.x-worker-thread-7] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:25:01.453 [vert.x-worker-thread-10] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:25:06.462 [vert.x-worker-thread-12] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:25:11.469 [vert.x-worker-thread-15] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:25:16.484 [vert.x-worker-thread-18] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:25:21.497 [vert.x-worker-thread-0] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:25:26.503 [vert.x-worker-thread-3] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:40:37.473 [vert.x-worker-thread-6] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:40:42.484 [vert.x-worker-thread-8] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:40:47.491 [vert.x-worker-thread-11] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:40:52.497 [vert.x-worker-thread-14] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:40:57.503 [vert.x-worker-thread-16] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:41:02.507 [vert.x-worker-thread-19] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:41:07.516 [vert.x-worker-thread-2] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:41:12.533 [vert.x-worker-thread-4] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:41:17.542 [vert.x-worker-thread-7] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:41:22.547 [vert.x-worker-thread-10] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:41:27.553 [vert.x-worker-thread-12] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:41:32.557 [vert.x-worker-thread-15] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:58:48.122 [vert.x-worker-thread-18] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:58:53.125 [vert.x-worker-thread-0] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:58:58.128 [vert.x-worker-thread-3] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:59:03.137 [vert.x-worker-thread-6] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:59:08.142 [vert.x-worker-thread-8] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:59:13.148 [vert.x-worker-thread-11] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:59:18.156 [vert.x-worker-thread-14] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:59:23.157 [vert.x-worker-thread-16] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:59:28.161 [vert.x-worker-thread-19] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:59:33.169 [vert.x-worker-thread-2] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:59:38.168 [vert.x-worker-thread-4] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+10:59:43.171 [vert.x-worker-thread-7] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:15:23.021 [vert.x-worker-thread-10] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:15:28.021 [vert.x-worker-thread-12] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:15:33.028 [vert.x-worker-thread-15] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:15:38.032 [vert.x-worker-thread-18] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:15:43.036 [vert.x-worker-thread-0] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:15:48.035 [vert.x-worker-thread-3] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:15:53.050 [vert.x-worker-thread-6] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:15:58.038 [vert.x-worker-thread-8] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:16:03.042 [vert.x-worker-thread-11] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:16:08.042 [vert.x-worker-thread-14] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:16:13.049 [vert.x-worker-thread-16] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:16:18.050 [vert.x-worker-thread-19] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:16:23.057 [vert.x-worker-thread-2] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:16:28.057 [vert.x-worker-thread-4] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:16:33.061 [vert.x-worker-thread-7] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:16:38.066 [vert.x-worker-thread-10] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:16:43.068 [vert.x-worker-thread-12] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:16:48.073 [vert.x-worker-thread-15] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:16:53.076 [vert.x-worker-thread-18] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:16:58.079 [vert.x-worker-thread-0] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:17:03.088 [vert.x-worker-thread-3] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:17:08.091 [vert.x-worker-thread-6] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:17:13.097 [vert.x-worker-thread-8] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:17:18.102 [vert.x-worker-thread-11] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:17:23.109 [vert.x-worker-thread-14] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:17:28.110 [vert.x-worker-thread-16] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:17:33.112 [vert.x-worker-thread-19] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:17:38.117 [vert.x-worker-thread-2] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:17:43.120 [vert.x-worker-thread-4] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:17:48.120 [vert.x-worker-thread-7] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:17:53.123 [vert.x-worker-thread-10] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:17:58.123 [vert.x-worker-thread-12] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:18:03.125 [vert.x-worker-thread-15] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:18:08.133 [vert.x-worker-thread-18] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:18:13.137 [vert.x-worker-thread-0] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:18:18.142 [vert.x-worker-thread-3] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:18:23.145 [vert.x-worker-thread-6] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:18:28.149 [vert.x-worker-thread-8] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:18:33.156 [vert.x-worker-thread-11] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:18:38.160 [vert.x-worker-thread-14] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:18:43.164 [vert.x-worker-thread-16] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:18:48.168 [vert.x-worker-thread-19] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:18:53.169 [vert.x-worker-thread-2] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:18:58.172 [vert.x-worker-thread-4] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:19:03.176 [vert.x-worker-thread-7] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:19:08.181 [vert.x-worker-thread-10] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:19:13.187 [vert.x-worker-thread-12] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:19:18.189 [vert.x-worker-thread-15] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:19:23.193 [vert.x-worker-thread-18] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:19:28.198 [vert.x-worker-thread-0] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:19:33.203 [vert.x-worker-thread-3] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:19:38.207 [vert.x-worker-thread-6] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:19:43.209 [vert.x-worker-thread-8] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:19:48.211 [vert.x-worker-thread-11] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:19:53.216 [vert.x-worker-thread-14] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:19:58.222 [vert.x-worker-thread-16] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:20:03.227 [vert.x-worker-thread-19] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:20:08.234 [vert.x-worker-thread-2] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:20:13.238 [vert.x-worker-thread-4] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:20:18.240 [vert.x-worker-thread-7] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:20:23.246 [vert.x-worker-thread-10] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:20:28.252 [vert.x-worker-thread-12] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:20:33.257 [vert.x-worker-thread-15] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:20:38.262 [vert.x-worker-thread-18] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:20:43.262 [vert.x-worker-thread-0] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:20:48.261 [vert.x-worker-thread-3] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:20:53.265 [vert.x-worker-thread-6] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:20:58.272 [vert.x-worker-thread-8] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:21:03.282 [vert.x-worker-thread-11] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:21:08.292 [vert.x-worker-thread-14] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:21:13.301 [vert.x-worker-thread-16] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:21:18.307 [vert.x-worker-thread-19] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:21:23.314 [vert.x-worker-thread-2] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:21:28.317 [vert.x-worker-thread-4] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:21:33.325 [vert.x-worker-thread-7] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:21:38.332 [vert.x-worker-thread-10] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:21:43.342 [vert.x-worker-thread-12] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:21:48.348 [vert.x-worker-thread-15] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:21:53.357 [vert.x-worker-thread-18] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:21:58.363 [vert.x-worker-thread-0] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:22:03.370 [vert.x-worker-thread-3] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:22:08.377 [vert.x-worker-thread-6] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:22:13.380 [vert.x-worker-thread-8] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:22:18.387 [vert.x-worker-thread-11] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:22:23.396 [vert.x-worker-thread-14] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:22:28.404 [vert.x-worker-thread-16] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:22:33.412 [vert.x-worker-thread-19] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:22:38.419 [vert.x-worker-thread-2] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:22:43.425 [vert.x-worker-thread-4] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:22:48.434 [vert.x-worker-thread-7] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:22:53.441 [vert.x-worker-thread-10] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:22:58.446 [vert.x-worker-thread-12] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:23:03.455 [vert.x-worker-thread-15] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:23:08.462 [vert.x-worker-thread-18] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:23:13.470 [vert.x-worker-thread-0] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:23:18.478 [vert.x-worker-thread-3] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
+11:23:23.485 [vert.x-worker-thread-6] [] ERROR i.g.n.m.h.NodeMonitoringEventHandler - Unable to process health check message, ex=org.springframework.dao.IncorrectResultSizeDataAccessException: Query { "$java" : Query: { "nodeId" : "31b3e7f4-12d1-4f07-b3e7-f412d10f0798", "type" : "HEALTH_CHECK"}, Fields: {}, Sort: {} } returned non unique result
