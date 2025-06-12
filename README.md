@@ -98,4 +98,7 @@ Next we specify the rate-limiting policy for incoming requests. In the filtering
 
 ![pol_2](./images/pol_2.png)
 
-Finally you need to make sure that the gateway is aware of the new API. For this you need to deploy it and then start the API in order to use it. On the top right corner you should see a "Deploy API"-button. After deployment, go to the "Info" subtab in the "APIs" tab and start the API. Congratulations! Your new API is running on the gateway.
+Finally you need to make sure that the gateway is aware of the new API. For this you need to deploy it and then start the API in order to use it. At the top right corner you should see a "Deploy API"-button. After deployment, go to the "Info" subtab in the "APIs" tab and start the API. Congratulations! Your new API is running on the gateway.
+
+
+## Acess Management
